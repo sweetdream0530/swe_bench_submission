@@ -6105,8 +6105,7 @@ def agent_main(input_dict: Dict[str, Any], repo_dir: str = "repo", test_mode: bo
     global DEFAULT_PROXY_URL, REPO_DIR
     repo_dir = os.path.abspath(repo_dir)
     REPO_DIR = repo_dir
-    if test_mode:
-        DEFAULT_PROXY_URL = "http://localhost:8001"
+    
     cwd = os.getcwd()
     if os.path.exists(repo_dir):
         os.chdir(repo_dir)

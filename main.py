@@ -26,8 +26,15 @@ from trajectory_logger import TrajectoryLogger
 from patch_generator import PatchGenerator
 import shutil
 import signal
-import psutil
 from contextlib import contextmanager
+
+# Optional psutil import with fallback
+try:
+    import psutil
+    PSUTIL_AVAILABLE = True
+except ImportError:
+    PSUTIL_AVAILABLE = False
+    print("Warning: psutil not available, resource monitoring disabled")
 
 # Enhanced Accuracy Algorithm Configuration
 SELF_CONSISTENCY_CONFIG = {
@@ -76,6 +83,8 @@ KIMI_MODEL_NAME = "moonshotai/Kimi-K2-Instruct"
 DEEPSEEK_MODEL_NAME = "deepseek-ai/DeepSeek-V3-0324"
 QWEN_MODEL_NAME = "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
 AGENT_MODELS = [GLM_MODEL_NAME, QWEN_MODEL_NAME, KIMI_MODEL_NAME, DEEPSEEK_MODEL_NAME]
+# Fallback models in case of API issues
+FALLBACK_MODELS = [GLM_MODEL_NAME, QWEN_MODEL_NAME, KIMI_MODEL_NAME]  # Remove DeepSeek if problematic
 MAX_STEPS = 120
 MAX_STEPS_TEST_PATCH_FIND = 50
 DEBUG_MODE = True

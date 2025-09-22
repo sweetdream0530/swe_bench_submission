@@ -47,6 +47,39 @@ KIMI_MODEL_NAME = "moonshotai/Kimi-K2-Instruct"
 DEEPSEEK_MODEL_NAME = "deepseek-ai/DeepSeek-V3-0324"
 QWEN_MODEL_NAME = "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8"
 AGENT_MODELS=[GLM_MODEL_NAME, QWEN_MODEL_NAME, KIMI_MODEL_NAME, DEEPSEEK_MODEL_NAME]
+# Fallback models in case of API issues
+FALLBACK_MODELS = [GLM_MODEL_NAME, QWEN_MODEL_NAME, KIMI_MODEL_NAME]  # Remove DeepSeek if problematic
+
+# Model health tracking
+MODEL_HEALTH = {model: True for model in AGENT_MODELS}
+
+def check_model_health(model_name: str) -> bool:
+    """Check if a model is healthy by sending a simple test request"""
+    try:
+        test_messages = [{"role": "user", "content": "Hello"}]
+        response = EnhancedNetwork.make_request(test_messages, model=model_name)
+        return response and response.strip() != "" and "Chutes API returned empty response" not in response
+    except Exception:
+        return False
+
+def get_healthy_models() -> List[str]:
+    """Get list of currently healthy models"""
+    healthy_models = []
+    for model in AGENT_MODELS:
+        if MODEL_HEALTH.get(model, True):
+            healthy_models.append(model)
+    return healthy_models if healthy_models else FALLBACK_MODELS
+
+def recover_unhealthy_models():
+    """Periodically check and recover unhealthy models"""
+    for model in AGENT_MODELS:
+        if not MODEL_HEALTH.get(model, True):
+            logger.info(f"🔄 Checking if {model} has recovered...")
+            if check_model_health(model):
+                MODEL_HEALTH[model] = True
+                logger.info(f"✅ {model} has recovered and is now healthy")
+            else:
+                logger.info(f"❌ {model} is still unhealthy")
 MAX_STEPS = 200
 MAX_STEPS_TEST_PATCH_FIND = 100
 DEBUG_MODE=True
@@ -1418,18 +1451,59 @@ class EnhancedNetwork(Network):
         error_counter=cls.get_error_counter()
         next_thought, next_tool_name, next_tool_args = None, None, None
         total_attempts=0
+        
+        # Use healthy models, prioritizing the requested model
+        available_models = get_healthy_models()
+        if model in available_models:
+            # Move the requested model to the front
+            available_models.remove(model)
+            available_models.insert(0, model)
+        
         for attempt in range(max_retries):
             try:
                 total_attempts+=1
-                index = AGENT_MODELS.index(model) if model in AGENT_MODELS else -1
-                raw_text=cls.make_request(messages,model=AGENT_MODELS[(index + attempt)%len(AGENT_MODELS)])
+                current_model = available_models[attempt % len(available_models)]
+                
+                logger.info(f"🔄 Attempt {attempt + 1}/{max_retries} with model: {current_model}")
+                
+                raw_text=cls.make_request(messages,model=current_model)
+                
+                # Check for empty response
+                if not raw_text or raw_text.strip() == "":
+                    logger.warning(f"⚠️ Empty response from {current_model}, trying next model...")
+                    if attempt < max_retries - 1:
+                        continue
+                    else:
+                        raise Exception(f"All models returned empty responses")
+                
+                # Check for Chutes API error messages
+                if "Chutes API returned empty response" in raw_text:
+                    logger.warning(f"⚠️ Chutes API error from {current_model}, marking as unhealthy and trying next model...")
+                    MODEL_HEALTH[current_model] = False
+                    if attempt < max_retries - 1:
+                        continue
+                    else:
+                        raise Exception(f"Chutes API errors from all models")
+                
                 is_valid,error_msg=cls.is_valid_response(raw_text)
                 if not(is_valid):
-                    raise Exception(error_msg)
+                    logger.warning(f"⚠️ Invalid response from {current_model}: {error_msg}")
+                    if attempt < max_retries - 1:
+                        continue
+                    else:
+                        raise Exception(error_msg)
+                
                 next_thought, next_tool_name, next_tool_args,error_msg = cls.parse_response(raw_text)
                 if error_msg:
-                    raise Exception(error_msg)
+                    logger.warning(f"⚠️ Parse error from {current_model}: {error_msg}")
+                    if attempt < max_retries - 1:
+                        continue
+                    else:
+                        raise Exception(error_msg)
+                
+                logger.info(f"✅ Success with model: {current_model}")
                 break  # Success, exit retry loop
+                
             except Exception as e:
                 error_body = str(e)
                 logger.error(f"Error: {error_body}")
@@ -6699,6 +6773,9 @@ def multi_task_process(input_dict: Dict[str, Any], repod_dir: str = 'repo'):
     test_func_names = []
     test_patch_find_messages = []
     patch_find_messages = []
+    
+    # Check and recover unhealthy models
+    recover_unhealthy_models()
     
     # Enhanced preprocessing with intelligent search
     tool_manager = EnhancedToolManager()

@@ -263,10 +263,10 @@ def run(
     """
     
     print(f"Starting Enhanced SWE-Bench run for instance: {instance_id}")
-    print(f"Problem Statement: {problem_statement}")
     print(f"Repository Path: {repo_path}")
     print(f"Base Commit: {base_commit}")
     print(f"Version: {version}")
+    print(f"Problem Statement: {problem_statement}")
     print(f"Trajectory Directory: {traj_dir}")
     
     # Set default values for optional parameters

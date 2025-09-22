@@ -58,12 +58,27 @@ class PatchGenerator:
             subprocess.run(["git", "commit", "-m", commit_message], check=True)
             
             # Generate the diff against the previous commit
-            patch_command = ["git", "diff", "HEAD~1", "HEAD"]
-            result = subprocess.run(patch_command, capture_output=True, text=True, check=True)
-            patch_output = result.stdout
+            # Check if there's a previous commit
+            try:
+                subprocess.run(["git", "rev-parse", "HEAD~1"], check=True, capture_output=True)
+                # There's a previous commit, diff against it
+                patch_command = ["git", "diff", "HEAD~1", "HEAD"]
+                result = subprocess.run(patch_command, capture_output=True, text=True, check=True)
+                patch_output = result.stdout
+            except subprocess.CalledProcessError:
+                # No previous commit, diff against empty tree
+                patch_command = ["git", "diff", "--cached"]
+                result = subprocess.run(patch_command, capture_output=True, text=True, check=True)
+                patch_output = result.stdout
             
             # Revert the temporary commit
-            subprocess.run(["git", "reset", "--soft", "HEAD~1"], check=True)
+            try:
+                subprocess.run(["git", "rev-parse", "HEAD~1"], check=True, capture_output=True)
+                # There's a previous commit, reset to it
+                subprocess.run(["git", "reset", "--soft", "HEAD~1"], check=True)
+            except subprocess.CalledProcessError:
+                # No previous commit, reset to empty
+                subprocess.run(["git", "reset", "--hard", "HEAD"], check=True)
             
             return patch_output
             

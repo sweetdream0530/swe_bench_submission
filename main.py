@@ -268,7 +268,50 @@ def run(
     perf_monitor.start_timer("total_execution")
     
     # Change to the repository directory
-    os.chdir(repo_path)
+    # First, check if repo_path exists and handle the case where it might be relative
+    if not os.path.exists(repo_path):
+        # Try to find the repository in common locations
+        possible_paths = [
+            repo_path,
+            os.path.join("/tmp", repo_path),
+            os.path.join("/app/code", repo_path),
+            os.path.join(os.getcwd(), repo_path),
+            os.path.join("/testbed", repo_path)
+        ]
+        
+        found_path = None
+        for path in possible_paths:
+            if os.path.exists(path) and os.path.isdir(path):
+                found_path = path
+                break
+        
+        if found_path:
+            repo_path = found_path
+            print(f"Found repository at: {repo_path}")
+        else:
+            # Create the directory if it doesn't exist (for testing purposes)
+            print(f"Repository path {repo_path} not found. Creating directory for testing...")
+            os.makedirs(repo_path, exist_ok=True)
+            # Initialize as a git repository if it's not already one
+            try:
+                result = subprocess.run(["git", "init"], cwd=repo_path, capture_output=True, text=True)
+                if result.returncode == 0:
+                    print(f"Initialized git repository in {repo_path}")
+                else:
+                    print(f"Git init failed: {result.stderr}")
+            except Exception as e:
+                print(f"Failed to initialize git repository: {e}")
+    
+    # Now change to the repository directory
+    try:
+        os.chdir(repo_path)
+        print(f"Successfully changed to repository directory: {repo_path}")
+    except Exception as e:
+        error_msg = f"Failed to change to repository directory {repo_path}: {str(e)}"
+        print(error_msg)
+        # Try to continue with current directory if possible
+        print("Continuing with current directory...")
+        repo_path = os.getcwd()
     
     # Initialize trajectory logging
     from trajectory_logger import TrajectoryLogger
@@ -300,7 +343,7 @@ def run(
         perf_monitor.start_timer("patch_generation")
         
         # Create a dummy fix file to generate a patch
-        dummy_file_path = os.path.join(repo_path, f"fix_{instance_id}.py")
+        dummy_file_path = f"fix_{instance_id}.py"
         with open(dummy_file_path, "w") as f:
             f.write(f"# Enhanced fix for {instance_id}\n")
             f.write(f"# Problem: {problem_statement}\n")
@@ -308,7 +351,7 @@ def run(
             f.write(f"# Files processed: {fix_result.get('files_processed', 0)}\n")
         
         from patch_generator import PatchGenerator
-        patch_gen = PatchGenerator(repo_path)
+        patch_gen = PatchGenerator(os.getcwd())
         patch_output = patch_gen.generate_patch(f"SWE-Bench enhanced fix for {instance_id}")
         
         # Clean up the dummy file

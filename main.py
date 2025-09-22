@@ -32,9 +32,11 @@ from contextlib import contextmanager
 try:
     import psutil
     PSUTIL_AVAILABLE = True
+    print(f"✅ psutil {psutil.__version__} loaded successfully")
 except ImportError:
     PSUTIL_AVAILABLE = False
-    print("Warning: psutil not available, resource monitoring disabled")
+    print("⚠️ Warning: psutil not available, resource monitoring disabled")
+    print("   Install with: pip install psutil>=7.0.0")
 
 # Enhanced Accuracy Algorithm Configuration
 SELF_CONSISTENCY_CONFIG = {

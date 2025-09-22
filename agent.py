@@ -38,7 +38,7 @@ def timeout_manager(seconds: int):
         signal.alarm(0)
         signal.signal(signal.SIGALRM, old_handler)
 
-DEFAULT_PROXY_URL = os.getenv("AI_PROXY_URL", "http://195.201.172.232:8001/agents/inference")
+DEFAULT_PROXY_URL = os.getenv("AI_PROXY_URL", "http://195.201.172.232:8001/")
 FALLBACK_MODE = True
 DEFAULT_TIMEOUT = int(os.getenv("AGENT_TIMEOUT", "2200"))
 MAX_TEST_PATCH_TIMEOUT = int(os.getenv("MAX_STEPS_TEST_PATCH_FIND", "500"))

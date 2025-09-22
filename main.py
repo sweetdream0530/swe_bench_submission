@@ -21,6 +21,8 @@ import logging
 import concurrent.futures
 import threading
 from collections import defaultdict
+from trajectory_logger import TrajectoryLogger
+from patch_generator import PatchGenerator
 
 # Enhanced Accuracy Algorithm Configuration
 SELF_CONSISTENCY_CONFIG = {
@@ -226,12 +228,14 @@ class Network:
 
 # Main SWE-Bench run function
 def run(
-    problem_statement: str,
     repo_path: str,
     instance_id: str,
+    base_commit: str,
+    problem_statement: str,
+    version: str,
     traj_dir: str,
-    temp_dir: str,
-    log_path: str,
+    temp_dir: str = None,
+    log_path: str = None,
     test_file_path: str = None,
     test_case_name: str = None,
     timeout: int = 900,
@@ -241,12 +245,14 @@ def run(
     Main entry point for the SWE-Bench evaluation with enhanced accuracy algorithms.
     
     Args:
-        problem_statement (str): The problem statement for the task.
         repo_path (str): Path to the repository where the changes need to be applied.
         instance_id (str): Unique identifier for the current task instance.
+        base_commit (str): The base commit hash for the repository.
+        problem_statement (str): The problem statement for the task.
+        version (str): Version information for the task.
         traj_dir (str): Directory to write trajectory logs.
-        temp_dir (str): Temporary directory for intermediate files.
-        log_path (str): Path to the log file for the current run.
+        temp_dir (str, optional): Temporary directory for intermediate files. Defaults to None.
+        log_path (str, optional): Path to the log file for the current run. Defaults to None.
         test_file_path (str, optional): Path to a specific test file to run. Defaults to None.
         test_case_name (str, optional): Name of a specific test case to run. Defaults to None.
         timeout (int, optional): Maximum time allowed for the agent to run. Defaults to 900.
@@ -259,7 +265,16 @@ def run(
     print(f"Starting Enhanced SWE-Bench run for instance: {instance_id}")
     print(f"Problem Statement: {problem_statement}")
     print(f"Repository Path: {repo_path}")
+    print(f"Base Commit: {base_commit}")
+    print(f"Version: {version}")
     print(f"Trajectory Directory: {traj_dir}")
+    
+    # Set default values for optional parameters
+    if temp_dir is None:
+        temp_dir = "/tmp/swe_bench_temp"
+    if log_path is None:
+        log_path = f"/tmp/swe_bench_log_{instance_id}.txt"
+    
     print(f"Temporary Directory: {temp_dir}")
     print(f"Log Path: {log_path}")
     
@@ -314,7 +329,6 @@ def run(
         repo_path = os.getcwd()
     
     # Initialize trajectory logging
-    from trajectory_logger import TrajectoryLogger
     logger = TrajectoryLogger(traj_dir)
     
     try:
@@ -350,7 +364,6 @@ def run(
             f.write(f"# Analysis confidence: {consensus_result.get('confidence', 0.0)}\n")
             f.write(f"# Files processed: {fix_result.get('files_processed', 0)}\n")
         
-        from patch_generator import PatchGenerator
         patch_gen = PatchGenerator(os.getcwd())
         patch_output = patch_gen.generate_patch(f"SWE-Bench enhanced fix for {instance_id}")
         
@@ -510,9 +523,11 @@ if __name__ == "__main__":
     
     # Run the main function
     patch = run(
-        problem_statement=dummy_problem,
         repo_path=dummy_repo,
         instance_id=dummy_instance,
+        base_commit="test_commit_123",
+        problem_statement=dummy_problem,
+        version="1.0.0",
         traj_dir=dummy_traj_dir,
         temp_dir=dummy_temp_dir,
         log_path=dummy_log_path

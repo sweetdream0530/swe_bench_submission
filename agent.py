@@ -358,9 +358,11 @@ class IntelligentSearchEngine:
         # Sort by weight and return top results
         fused_results.sort(key=lambda x: x['weight'], reverse=True)
         
+        # Ensure fused_results is iterable before slicing
+        fused_results_safe = list(fused_results) if fused_results is not None else []
         return {
             'success': True,
-            'fused_results': fused_results[:10],  # Top 10 results
+            'fused_results': fused_results_safe[:10],  # Top 10 results
             'total_strategies': len(search_results),
             'successful_strategies': sum(1 for r in search_results.values() if r.get('success', False))
         }
@@ -841,7 +843,9 @@ class DependencyAwareParallelExecutor:
         python_files = phase1_results.get('file_listing', '').split('\n')
         relevant_files = [f for f in python_files if f.strip()]
         phase2_tasks = {}
-        for file_path in relevant_files[:5]:  # Limit to first 5 files
+        # Ensure relevant_files is a list before slicing
+        relevant_files_safe = list(relevant_files) if relevant_files is not None else []
+        for file_path in relevant_files_safe[:5]:  # Limit to first 5 files
             phase2_tasks[f'analyze_{file_path}'] = lambda fp=file_path: self._analyze_file(fp)
         phase2_results = self._execute_parallel(phase2_tasks)
         # Phase 3: Operations that depend on test functions
@@ -1075,7 +1079,9 @@ class Utils:
         '''
         strings_list=strings.split("\n")
         if len(strings_list)>n:
-            return "\n".join(strings_list[:n])+"\n..." + f"({len(strings_list)-n} more lines)"
+            # Ensure strings_list is a list before slicing
+            strings_list_safe = list(strings_list) if strings_list is not None else []
+            return "\n".join(strings_list_safe[:n])+"\n..." + f"({len(strings_list_safe)-n} more lines)"
         else:
             return strings
     @classmethod
@@ -1226,7 +1232,8 @@ next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValida
                 if raw_text.startswith("YES") or raw_text.startswith("NO"):
                     return raw_text
                 # Handle for validate_changes_with_manual
-                normalized = re.sub(r"\s+", "", raw_text).lower()[:32]
+                raw_text_str = str(raw_text) if raw_text is not None else ""
+                normalized = re.sub(r"\s+", "", raw_text_str).lower()[:32]
                 print(f"First 32 characters of the response: {normalized}\n")
                 if (
                     'not_related' in normalized
@@ -1350,7 +1357,8 @@ next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValida
         text_resp=re.sub("[\'\"]*next_tool_args[\'\"]*:","next_tool_args:",text_resp)
         text_resp=re.sub("[\'\"]*observation[\'\"]*:","observation:",text_resp)
         if "next_thought" not in text_resp and "next_tool_name:" in text_resp and "next_tool_args:" in text_resp and text_resp.find("next_tool_name:")<text_resp.find("next_tool_args:") and text_resp.find("next_tool_name:")>10:
-            logger.info(f"next_thought not found in {text_resp[:50]}, adding it")
+            text_resp_str = str(text_resp) if text_resp is not None else ""
+            logger.info(f"next_thought not found in {text_resp_str[:50]}, adding it")
             text_resp="next_thought: "+text_resp
         if "next_tool_name:" in text_resp and "next_tool_args:" in text_resp and text_resp.find("next_tool_name:")<text_resp.find("next_tool_args:"):
             # remove all leading and trailing quotes in tool_name
@@ -1692,7 +1700,9 @@ class SelfConsistency:
                 'confidence': 0.95,
                 'context': context.copy()
             })
-        return paths[:self.num_paths]
+        # Ensure paths is a list before slicing
+        paths_safe = list(paths) if paths is not None else []
+        return paths_safe[:self.num_paths]
     def execute_reasoning_path(self, path: dict, problem_statement: str) -> dict:
         """
         Execute a single reasoning path and return results
@@ -2102,11 +2112,25 @@ class IntelligentSearch:
                 grep_search_command="grep --include='*.py' -rnE '.*' .",
                 test_files_only=False
             )
-            return {
-                'search_type': 'default',
-                'result': result[:500] + "..." if len(result) > 500 else result,
-                'note': 'Generic search across all Python files'
-            }
+            # Ensure result is a string before slicing
+            try:
+                result_str = str(result) if result is not None else ""
+                if len(result_str) > 500:
+                    truncated_result = result_str[:500] + "..."
+                else:
+                    truncated_result = result_str
+                return {
+                    'search_type': 'default',
+                    'result': truncated_result,
+                    'note': 'Generic search across all Python files'
+                }
+            except Exception as slice_error:
+                logger.error(f"Slice error in default search: {slice_error}")
+                return {
+                    'search_type': 'default',
+                    'result': f"Search completed but result formatting failed: {str(result)[:100]}...",
+                    'note': 'Generic search with formatting error'
+                }
         except Exception as e:
             return {
                 'search_type': 'default',
@@ -2120,7 +2144,9 @@ class IntelligentSearch:
         words = problem.lower().split()
         key_terms = [word for word in words if word not in stop_words and len(word) > 2]
         # Limit to top 5 most relevant terms
-        return key_terms[:5]
+        # Ensure key_terms is a list before slicing
+        key_terms_list = list(key_terms) if key_terms is not None else []
+        return key_terms_list[:5]
     def _identify_code_patterns(self, problem: str) -> List[str]:
         """Identify code patterns in the problem statement"""
         patterns = []
@@ -2849,8 +2875,11 @@ Don't forget to add short explanation after "YES" or "NO".
             comparison_prompt += "- Code readability\n- Performance impact\n- Test coverage\n- Backward compatibility\n- Maintainability"
             # Simple comparison logic since we don't have LLM access
             comparison = f"Solution Comparison:\n\n"
-            comparison += f"Solution 1 ({len(solution1)} chars):\n{solution1[:200]}...\n\n"
-            comparison += f"Solution 2 ({len(solution2)} chars):\n{solution2[:200]}...\n\n"
+            # Ensure solutions are strings before slicing
+            sol1_str = str(solution1) if solution1 is not None else ""
+            sol2_str = str(solution2) if solution2 is not None else ""
+            comparison += f"Solution 1 ({len(sol1_str)} chars):\n{sol1_str[:200]}...\n\n"
+            comparison += f"Solution 2 ({len(sol2_str)} chars):\n{sol2_str[:200]}...\n\n"
             comparison += "Analysis:\n"
             comparison += "- Code readability: Both solutions appear well-structured\n"
             comparison += "- Performance impact: Need testing to determine\n"
@@ -4420,7 +4449,9 @@ Only if you call it a second time **with no further changes required** will `fin
             # Search for multiple terms in parallel
             search_results = self.file_searcher.search_multiple_files_parallel(search_terms)
             # Get multiple file contents in parallel
-            file_contents = self.file_processor.get_multiple_file_contents_parallel(file_paths[:5])
+            # Ensure file_paths is a list before slicing
+            file_paths_safe = list(file_paths) if file_paths is not None else []
+            file_contents = self.file_processor.get_multiple_file_contents_parallel(file_paths_safe[:5])
             # Combine all results
             combined_results = {
                 'analysis': analysis_results,
@@ -4656,7 +4687,9 @@ Return strictly in JSON format:
                 elif "RELATED_FAIL" in validation_result:
                     status = "RELATED_FAIL"
                     details = "Changes insufficient for this test"
-            test_preview = test_code[:50].replace('\n', ' ').strip() + "..."
+            # Ensure test_code is a string before slicing
+            test_code_str = str(test_code) if test_code is not None else ""
+            test_preview = test_code_str[:50].replace('\n', ' ').strip() + "..."
             if status == "NOT_RELATED":
                 return f"Test {test_idx + 1}: {test_preview}\n❌ FAIL - CURRENT CHANGES DON'T DIRECTLY AFFECT THE TEST FUNCTION. CHECK BASE, DERIVED, OR RELATED FILES: {details}"
             elif status == "RELATED_PASS":
@@ -4748,7 +4781,9 @@ Review the details above to understand what's missing or what's incorrect in you
         # Filter out common words and keep meaningful terms
         stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'}
         key_terms = [word for word in words if word not in stop_words and len(word) > 3]
-        return list(set(key_terms))[:5]  # Limit to top 5 terms
+        # Ensure key_terms is iterable before processing
+        key_terms_iterable = key_terms if key_terms is not None else []
+        return list(set(key_terms_iterable))[:5]  # Limit to top 5 terms
     def _identify_relevant_tests(self, search_results: Dict[str, str], problem_statement: str) -> List[str]:
         """Identify the most relevant test functions from search results"""
         relevant_tests = []
@@ -4761,7 +4796,9 @@ Review the details above to understand what's missing or what's incorrect in you
                         file_path = line.split(':')[0]
                         func_name = line.split('def ')[1].split('(')[0]
                         relevant_tests.append(f"{file_path} - {func_name}")
-        return relevant_tests[:10]  # Limit to top 10 most relevant
+        # Ensure relevant_tests is a list before slicing
+        relevant_tests_list = list(relevant_tests) if relevant_tests is not None else []
+        return relevant_tests_list[:10]  # Limit to top 10 most relevant
     def _analyze_single_file(self, file_path: str) -> Dict[str, Any]:
         """Analyze a single file with multiple tools"""
         try:
@@ -5065,10 +5102,12 @@ class EnhancedToolManager(ToolManager):
                         lines = full_failure.split('\n')
                         # Always keep first 20 lines (test name, setup, initial context)
                         # And last 15 lines (actual error, assertion failure)
-                        if len(lines) > 500:  # Only truncate if significantly long
-                            start_lines = lines[:400]
-                            end_lines = lines[-100:]
-                            middle_count = len(lines) - 400
+                        # Ensure lines is a list before slicing
+                        lines_safe = list(lines) if lines is not None else []
+                        if len(lines_safe) > 500:  # Only truncate if significantly long
+                            start_lines = lines_safe[:400]
+                            end_lines = lines_safe[-100:]
+                            middle_count = len(lines_safe) - 400
                             truncated_failure = (
                                 '\n'.join(start_lines) + 
                                 f'\n\n... (truncated {middle_count} lines of detailed traceback) ...\n\n' +
@@ -5197,7 +5236,9 @@ class EnhancedToolManager(ToolManager):
                 context = context_match.group(0)
                 # Extract any additional error information
                 if "AssertionError" in context or "Error:" in context:
-                    enhanced += f"\n\nAdditional Context:\n{context[-500:]}"  # Last 500 chars
+                    # Ensure context is a string before slicing
+                    context_str = str(context) if context is not None else ""
+                    enhanced += f"\n\nAdditional Context:\n{context_str[-500:]}"  # Last 500 chars
         return enhanced
     def _extract_debug_prints_from_pytest(self, pytest_output: str) -> dict[str, list[str]]:
         """
@@ -5342,8 +5383,10 @@ class EnhancedToolManager(ToolManager):
                     success = False if "error" in out.lower() else True
                     if len(out) > 20000:
                         lines = out.splitlines()
-                        if len(lines) > 500:
-                            output = "\n".join(lines[:400] + ["... ({} lines omitted) ...".format(len(lines)-500)] + lines[-100:])
+                        # Ensure lines is a list before slicing
+                        lines_safe = list(lines) if lines is not None else []
+                        if len(lines_safe) > 500:
+                            output = "\n".join(lines_safe[:400] + ["... ({} lines omitted) ...".format(len(lines_safe)-500)] + lines_safe[-100:])
                         else:
                             output = out
                     else:
@@ -5358,8 +5401,10 @@ class EnhancedToolManager(ToolManager):
                     success = False if "error" in out.lower() else True
                     if len(out) > 20000:
                         lines = out.splitlines()
-                        if len(lines) > 500:
-                            output = "\n".join(lines[:400] + ["... ({} lines omitted) ...".format(len(lines)-500)] + lines[-100:])
+                        # Ensure lines is a list before slicing
+                        lines_safe = list(lines) if lines is not None else []
+                        if len(lines_safe) > 500:
+                            output = "\n".join(lines_safe[:400] + ["... ({} lines omitted) ...".format(len(lines_safe)-500)] + lines_safe[-100:])
                         else:
                             output = out
                     else:
@@ -5368,8 +5413,10 @@ class EnhancedToolManager(ToolManager):
             if not success:
                 if len(out) > 20000:
                     lines = out.splitlines()
-                    if len(lines) > 500:
-                        output = "\n".join(lines[:400] + ["... ({} lines omitted) ...".format(len(lines)-500)] + lines[-100:])
+                    # Ensure lines is a list before slicing
+                    lines_safe = list(lines) if lines is not None else []
+                    if len(lines_safe) > 500:
+                        output = "\n".join(lines_safe[:400] + ["... ({} lines omitted) ...".format(len(lines_safe)-500)] + lines_safe[-100:])
                     else:
                         output = out
                 else:
@@ -5406,9 +5453,11 @@ class EnhancedToolManager(ToolManager):
                             truncated_lines = truncate_long_lines(debug_outputs_lines)
                             output += "\n".join(truncated_lines)
                         else:
-                            first_250 = truncate_long_lines(debug_outputs_lines[:250])
-                            last_250 = truncate_long_lines(debug_outputs_lines[-250:])
-                            omitted = len(debug_outputs_lines) - 500
+                            # Ensure debug_outputs_lines is a list before slicing
+                            debug_outputs_lines_safe = list(debug_outputs_lines) if debug_outputs_lines is not None else []
+                            first_250 = truncate_long_lines(debug_outputs_lines_safe[:250])
+                            last_250 = truncate_long_lines(debug_outputs_lines_safe[-250:])
+                            omitted = len(debug_outputs_lines_safe) - 500
                             output += (
                                 "\n".join(first_250)
                                 + f"\n... (truncated {omitted} lines) ...\n"
@@ -6107,14 +6156,26 @@ def agent_main(input_dict: Dict[str, Any], repo_dir: str = "repo", test_mode: bo
     REPO_DIR = repo_dir
     
     cwd = os.getcwd()
-    if os.path.exists(repo_dir):
-        os.chdir(repo_dir)
-    installed_packages = subprocess.check_output(['pip','list']).decode('utf-8')
-    logger.info(f"packages installed: {installed_packages}")
-    set_env_for_agent()
-    result = process_task(input_dict, repo_dir)
-    os.chdir(cwd)
-    return result
+    try:
+        if os.path.exists(repo_dir):
+            os.chdir(repo_dir)
+        installed_packages = subprocess.check_output(['pip','list']).decode('utf-8')
+        logger.info(f"packages installed: {installed_packages}")
+        set_env_for_agent()
+        result = process_task(input_dict, repo_dir)
+        os.chdir(cwd)
+        print("***************")
+        print(f"Result type: {type(result)}")
+        print(f"Result: {result}")
+        print("***************")
+        return result
+    except Exception as e:
+        print(f"❌ Error in agent execution: {e}")
+        print(f"Error type: {type(e)}")
+        import traceback
+        traceback.print_exc()
+        os.chdir(cwd)
+        return {"patch": "", "test_func_names": [], "logs": f"Error: {e}", "test_patch_find_messages": [], "patch_find_messages": [], "elapsed_time": 0, "type": "error"}
 def set_env_for_agent():
     if os.getcwd() not in os.environ.get("PYTHONPATH",""):
         os.environ["PYTHONPATH"]=os.environ.get("PYTHONPATH","")+":"+os.getcwd()
@@ -6531,7 +6592,8 @@ def execute_agent_workflow(
                 if len(tool_args_list) < len(tool_names):
                     tool_args_list.extend({} for _ in range(len(tool_names) - len(tool_args_list)))
                 elif len(tool_args_list) > len(tool_names):
-                    tool_args_list = tool_args_list[:len(tool_names)]
+                    tool_args_list_safe = list(tool_args_list) if tool_args_list is not None else []
+                    tool_args_list = tool_args_list_safe[:len(tool_names)]
                 observations = [None] * len(tool_names)
                 def _run(idx:int, name:str, args:dict):
                     tool = tool_manager.get_tool(name)
@@ -6747,7 +6809,9 @@ def extract_keywords(problem_text: str) -> str:
                 seen.add(item)
                 yield item
     all_keywords = list(dedup(quoted + module_paths + non_ascii_tokens + special_chars))
-    return '|'.join(all_keywords[:10])
+    # Ensure all_keywords is iterable before slicing
+    all_keywords_safe = list(all_keywords) if all_keywords is not None else []
+    return '|'.join(all_keywords_safe[:10])
 def multi_task_process(input_dict: Dict[str, Any], repod_dir: str = 'repo'):
     """Enhanced multi-task process with self-consistency and intelligent search"""
     problem_text = input_dict.get("problem_statement")
@@ -6847,9 +6911,11 @@ def multi_task_process(input_dict: Dict[str, Any], repod_dir: str = 'repo'):
             
             # Execute reasoning paths in parallel
             with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+                # Ensure reasoning_paths is iterable before slicing
+                reasoning_paths_safe = list(reasoning_paths) if reasoning_paths is not None else []
                 future_to_path = {
                     executor.submit(self_consistency_engine.execute_reasoning_path, path, tool_manager): path 
-                    for path in reasoning_paths[:3]  # Limit to 3 paths for performance
+                    for path in reasoning_paths_safe[:3]  # Limit to 3 paths for performance
                 }
                 
                 completed_paths = []

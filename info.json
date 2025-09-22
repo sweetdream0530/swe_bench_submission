@@ -2,6 +2,12 @@
   "claimed_score": 0.85,
   "models_used": ["GLM-4.5-FP8", "Qwen3-Coder-480B-A35B-Instruct-FP8", "Kimi-K2-Instruct", "DeepSeek-V3-0324"],
   "submission_date": "2025-01-27",
+  "bounty_target": "Beat top SWE-Bench Verified score by ≥2%",
+  "evaluation_compatibility": {
+    "chutes_only": true,
+    "auto_validation": true,
+    "full_evaluation_ready": true
+  },
   "notes": "Enhanced SWE-Bench submission with advanced self-consistency algorithms, intelligent search with weighted fusion, parallel execution capabilities, and comprehensive resource management. Features multi-model ensemble approach with adaptive routing and performance optimization.",
   "enhancement_features": [
     "Self-consistency algorithm with 7 reasoning paths and 70% consensus threshold",

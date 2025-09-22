@@ -506,7 +506,7 @@ def run(
     traj_dir: str,
     temp_dir: str = None,
     log_path: str = None,
-    pr: str = None,
+    pr_url: str = None,
     test_file_path: str = None,
     test_case_name: str = None,
     timeout: int = 900,
@@ -618,6 +618,10 @@ def run(
         # Use timeout manager for the entire agent execution
         with timeout_manager(timeout):
             patch_output = agent_main(input_dict, repo_path, True)
+            patch_output = patch_output.get("patch", "")
+            print("-----------------")
+            print(patch_output)
+            print("-----------------")
         
         perf_monitor.end_timer("agent_execution", True)
         
@@ -643,11 +647,6 @@ def run(
         error_msg = f"Error in agent execution: {str(e)}"
         print(f"❌ {error_msg}")
         
-        logger.log_step(instance_id, 4, "agent_execution_error", {
-            "error": str(e),
-            "error_type": type(e).__name__
-        })
-        
         patch_output = ""
     
     # Final performance summary and cleanup
@@ -661,15 +660,12 @@ def run(
     # Print performance summary
     print("\n" + perf_monitor.get_performance_summary())
     
-    # Print network statistics
-    network_stats = network.get_error_stats()
-    print(f"\n🌐 Network Statistics:")
-    print(f"  - Total requests: {network_stats['total_requests']}")
-    print(f"  - Success rate: {network_stats['successful_requests']}/{network_stats['total_requests']}")
-    print(f"  - Error rate: {network_stats['error_rate']:.1%}")
     
     # Resource cleanup
     perf_monitor.resource_monitor.cleanup_if_needed()
     
     print(f"✅ Enhanced SWE-Bench run completed for {instance_id}")
+    print("+++++++++++++++++")
+    print(patch_output)
+    print("+++++++++++++++++")
     return patch_output

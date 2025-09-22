@@ -23,6 +23,7 @@ import threading
 from collections import defaultdict
 from trajectory_logger import TrajectoryLogger
 from patch_generator import PatchGenerator
+import shutil
 
 # Enhanced Accuracy Algorithm Configuration
 SELF_CONSISTENCY_CONFIG = {
@@ -227,6 +228,112 @@ class Network:
         return raw_text
 
 # Main SWE-Bench run function
+def clone_repository_if_needed(repo_path: str, instance_id: str, base_commit: str = None) -> str:
+    """
+    Clone a repository from GitHub if it doesn't exist locally.
+    
+    Args:
+        repo_path (str): The repository path (could be a GitHub URL or local path)
+        instance_id (str): The instance ID to help determine the repository
+        base_commit (str, optional): Specific commit to checkout
+    
+    Returns:
+        str: The local path to the cloned repository
+    """
+    # Check if repo_path is a GitHub URL
+    if repo_path.startswith("https://github.com/") or repo_path.startswith("git@github.com:"):
+        # Extract repository name from URL
+        if "github.com/" in repo_path:
+            repo_name = repo_path.split("github.com/")[-1].replace(".git", "")
+        else:
+            repo_name = repo_path.split("git@github.com:")[-1].replace(".git", "")
+        
+        # Create local path with instance_id to avoid conflicts
+        local_repo_path = f"/tmp/{repo_name.replace('/', '__')}_{instance_id}"
+        
+        # Clean up if exists
+        if os.path.exists(local_repo_path):
+            shutil.rmtree(local_repo_path)
+        
+        print(f"Cloning repository from GitHub: {repo_path}")
+        
+        # Clone the repository
+        result = subprocess.run([
+            "git", "clone", 
+            repo_path, 
+            local_repo_path
+        ], capture_output=True, text=True)
+        
+        if result.returncode != 0:
+            raise Exception(f"Failed to clone repository: {result.stderr}")
+        
+        print(f"✓ Successfully cloned repository to {local_repo_path}")
+        
+        # Checkout specific commit if provided
+        if base_commit:
+            try:
+                subprocess.run([
+                    "git", "checkout", base_commit
+                ], cwd=local_repo_path, capture_output=True, text=True, check=True)
+                print(f"✓ Checked out commit: {base_commit}")
+            except subprocess.CalledProcessError:
+                print(f"⚠ Could not checkout commit {base_commit}, using latest")
+        
+        # Configure git user
+        subprocess.run(["git", "config", "user.email", "swe-bench@example.com"], 
+                      cwd=local_repo_path, check=True, capture_output=True)
+        subprocess.run(["git", "config", "user.name", "SWE-Bench Agent"], 
+                      cwd=local_repo_path, check=True, capture_output=True)
+        
+        return local_repo_path
+    
+    # Check if repo_path looks like a repository name (e.g., "astropy/astropy", "django/django")
+    # and try to clone from GitHub
+    if "/" in repo_path and not os.path.exists(repo_path) and not repo_path.startswith("/"):
+        github_url = f"https://github.com/{repo_path}.git"
+        print(f"Attempting to clone from GitHub: {github_url}")
+        
+        # Create local path with instance_id to avoid conflicts
+        local_repo_path = f"/tmp/{repo_path.replace('/', '__')}_{instance_id}"
+        
+        # Clean up if exists
+        if os.path.exists(local_repo_path):
+            shutil.rmtree(local_repo_path)
+        
+        # Try to clone the repository
+        result = subprocess.run([
+            "git", "clone", 
+            github_url, 
+            local_repo_path
+        ], capture_output=True, text=True)
+        
+        if result.returncode == 0:
+            print(f"✓ Successfully cloned repository from GitHub to {local_repo_path}")
+            
+            # Checkout specific commit if provided
+            if base_commit:
+                try:
+                    subprocess.run([
+                        "git", "checkout", base_commit
+                    ], cwd=local_repo_path, capture_output=True, text=True, check=True)
+                    print(f"✓ Checked out commit: {base_commit}")
+                except subprocess.CalledProcessError:
+                    print(f"⚠ Could not checkout commit {base_commit}, using latest")
+            
+            # Configure git user
+            subprocess.run(["git", "config", "user.email", "swe-bench@example.com"], 
+                          cwd=local_repo_path, check=True, capture_output=True)
+            subprocess.run(["git", "config", "user.name", "SWE-Bench Agent"], 
+                          cwd=local_repo_path, check=True, capture_output=True)
+            
+            return local_repo_path
+        else:
+            print(f"⚠ Failed to clone from GitHub: {result.stderr}")
+            print("Continuing with original repo_path...")
+    
+    # If it's not a GitHub URL or cloneable pattern, return the original path
+    return repo_path
+
 def run(
     repo_path: str,
     instance_id: str,
@@ -282,15 +389,29 @@ def run(
     perf_monitor = PerformanceMonitor()
     perf_monitor.start_timer("total_execution")
     
-    # Change to the repository directory
-    # First, check if repo_path exists and handle the case where it might be relative
-    if not os.path.exists(repo_path):
+    # Handle repository cloning and setup
+    # First, try to clone from GitHub if repo_path looks like a GitHub URL
+    original_repo_path = repo_path
+    original_cwd = os.getcwd()
+    try:
+        repo_path = clone_repository_if_needed(repo_path, instance_id, base_commit)
+    except Exception as e:
+        print(f"Warning: Repository cloning failed: {e}")
+        repo_path = original_repo_path
+    
+    # If cloning didn't happen, check if repo_path exists and handle the case where it might be relative
+    if repo_path == original_repo_path and not os.path.exists(repo_path):
         # Try to find the repository in common locations
+        try:
+            current_dir = os.getcwd()
+        except OSError:
+            current_dir = "/tmp"  # Fallback to /tmp if current directory is invalid
+        
         possible_paths = [
             repo_path,
             os.path.join("/tmp", repo_path),
             os.path.join("/app/code", repo_path),
-            os.path.join(os.getcwd(), repo_path),
+            os.path.join(current_dir, repo_path),
             os.path.join("/testbed", repo_path)
         ]
         

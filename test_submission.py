@@ -78,9 +78,11 @@ def test_main_run_function():
         
         # Test the run function
         patch = run(
-            problem_statement="Fix a bug in the test file",
             repo_path=test_repo,
             instance_id="test_instance_001",
+            base_commit="test_commit_123",
+            problem_statement="Fix a bug in the test file",
+            version="1.0.0",
             traj_dir=test_traj_dir,
             temp_dir=test_temp_dir,
             log_path=test_log_path

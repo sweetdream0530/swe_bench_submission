@@ -1,0 +1,1096 @@
+{
+  "total_instances": 16,
+  "compliant_instances": 0,
+  "non_compliant_instances": 16,
+  "validation_details": {
+    "astropy__astropy-14539": {
+      "instance_id": "astropy__astropy-14539",
+      "timestamp": "2025-09-24T15:00:23.024672",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14539",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14508": {
+      "instance_id": "astropy__astropy-14508",
+      "timestamp": "2025-09-24T15:00:23.025113",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14508",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-13453": {
+      "instance_id": "astropy__astropy-13453",
+      "timestamp": "2025-09-24T15:00:23.025493",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-13453",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-13977": {
+      "instance_id": "astropy__astropy-13977",
+      "timestamp": "2025-09-24T15:00:23.025861",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-13977",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14182": {
+      "instance_id": "astropy__astropy-14182",
+      "timestamp": "2025-09-24T15:00:23.026222",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14182",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14369": {
+      "instance_id": "astropy__astropy-14369",
+      "timestamp": "2025-09-24T15:00:23.026583",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14369",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-12907": {
+      "instance_id": "astropy__astropy-12907",
+      "timestamp": "2025-09-24T15:00:23.026945",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-12907",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-13398": {
+      "instance_id": "astropy__astropy-13398",
+      "timestamp": "2025-09-24T15:00:23.027335",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-13398",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14995": {
+      "instance_id": "astropy__astropy-14995",
+      "timestamp": "2025-09-24T15:00:23.027772",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14995",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14096": {
+      "instance_id": "astropy__astropy-14096",
+      "timestamp": "2025-09-24T15:00:23.028132",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14096",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14598": {
+      "instance_id": "astropy__astropy-14598",
+      "timestamp": "2025-09-24T15:00:23.028478",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14598",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-13033": {
+      "instance_id": "astropy__astropy-13033",
+      "timestamp": "2025-09-24T15:00:23.028818",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-13033",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14365": {
+      "instance_id": "astropy__astropy-14365",
+      "timestamp": "2025-09-24T15:00:23.029167",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14365",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-14309": {
+      "instance_id": "astropy__astropy-14309",
+      "timestamp": "2025-09-24T15:00:23.029511",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-14309",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-13236": {
+      "instance_id": "astropy__astropy-13236",
+      "timestamp": "2025-09-24T15:00:23.029849",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-13236",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    },
+    "astropy__astropy-13579": {
+      "instance_id": "astropy__astropy-13579",
+      "timestamp": "2025-09-24T15:00:23.030199",
+      "overall_compliant": false,
+      "overall_score": 0.25,
+      "structure_validation": {
+        "instance_id": "astropy__astropy-13579",
+        "structure_valid": true,
+        "missing_components": [],
+        "present_components": [
+          "llm_interactions",
+          "tool_calls",
+          "filtering_decisions",
+          "performance_metrics",
+          "raw_logs",
+          "summary.json"
+        ],
+        "walkability_score": 0.0,
+        "compliance_issues": []
+      },
+      "llm_interactions_validation": {
+        "has_interactions": false,
+        "interaction_count": 0,
+        "has_inputs": false,
+        "has_outputs": false,
+        "has_metadata": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "tool_calls_validation": {
+        "has_tool_calls": false,
+        "tool_call_count": 0,
+        "has_tool_names": false,
+        "has_tool_args": false,
+        "has_tool_results": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "filtering_decisions_validation": {
+        "has_decisions": false,
+        "decision_count": 0,
+        "has_decision_types": false,
+        "has_reasoning": false,
+        "compliance_score": 0.0,
+        "issues": []
+      },
+      "walkability_validation": {
+        "is_walkable": false,
+        "walkability_score": 0.25,
+        "missing_for_walkability": [
+          "has_llm_interactions",
+          "has_tool_calls",
+          "has_decision_trace"
+        ],
+        "walkability_components": {
+          "has_llm_interactions": false,
+          "has_tool_calls": false,
+          "has_decision_trace": false,
+          "has_performance_data": true
+        }
+      },
+      "recommendations": [
+        "Enhance LLM interaction logging - capture inputs, outputs, and metadata",
+        "Improve tool call logging - capture tool names, arguments, and results",
+        "Add filtering decision tracking - log decision types and reasoning",
+        "Improve walkability - ensure all LLM decisions can be traced"
+      ]
+    }
+  },
+  "overall_compliance": false
+}

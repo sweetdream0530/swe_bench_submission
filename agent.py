@@ -81,7 +81,7 @@ def recover_unhealthy_models():
             else:
                 logger.info(f"❌ {model} is still unhealthy")
 MAX_STEPS = 200
-MAX_STEPS_TEST_PATCH_FIND = 100
+MAX_STEPS_TEST_PATCH_FIND = 50
 DEBUG_MODE=True
 TIMEOUT_ALLOCATION = {
     'TEST_DISCOVERY_PHASE': 600,      # 10 minutes - find relevant tests

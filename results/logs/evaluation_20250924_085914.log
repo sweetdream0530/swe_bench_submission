@@ -1,0 +1,14 @@
+2025-09-24 08:59:14,240 - INFO - 🚀 Starting SWE-Bench evaluation
+2025-09-24 08:59:14,240 - INFO - 📁 Output file: results/predictions/predictions.jsonl
+2025-09-24 08:59:14,240 - INFO - 📊 Trajectory directory: results/trajectories
+2025-09-24 08:59:14,240 - INFO - ⚙️ Max workers: 2
+2025-09-24 08:59:14,240 - INFO - ⏰ Timeout: 2200s
+2025-09-24 08:59:14,240 - ERROR - ❌ Evaluation failed: datasets library not available. Install with: pip install datasets
+2025-09-24 08:59:14,240 - ERROR - Traceback (most recent call last):
+  File "/root/swe_bench_submission/evaluate_swe_bench.py", line 342, in run_evaluation
+    instances = self.load_dataset()
+                ^^^^^^^^^^^^^^^^^^^
+  File "/root/swe_bench_submission/evaluate_swe_bench.py", line 135, in load_dataset
+    raise ImportError("datasets library not available. Install with: pip install datasets")
+ImportError: datasets library not available. Install with: pip install datasets
+

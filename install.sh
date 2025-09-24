@@ -56,3 +56,7 @@ echo "   python3 test_compatibility.py"
 echo ""
 echo "📋 To run a sample task:"
 echo "   python3 test_agent.py"
+
+
+
+

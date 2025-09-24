@@ -1,0 +1,21 @@
+{
+  "instance_id": "astropy__astropy-14995",
+  "total_steps": 5,
+  "sessions": [
+    "session_1758683317",
+    "session_1758683309",
+    "session_1758683710"
+  ],
+  "final_result": {
+    "success": true,
+    "patch_length": 14,
+    "message": "Success"
+  },
+  "performance_summary": {
+    "total_steps": 4,
+    "avg_step_time": 0.0,
+    "total_llm_interactions": 0,
+    "total_tool_calls": 0,
+    "memory_usage_mb": 180.41796875
+  }
+}

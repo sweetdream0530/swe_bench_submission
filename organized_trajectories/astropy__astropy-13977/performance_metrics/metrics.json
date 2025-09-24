@@ -1,0 +1,18 @@
+{
+  "total_steps": 5,
+  "llm_interactions": 0,
+  "tool_calls": 0,
+  "filtering_decisions": 0,
+  "total_duration": 9.5367431640625e-07,
+  "memory_usage": [
+    177.4765625,
+    177.4765625,
+    177.4765625,
+    178.40625
+  ],
+  "step_types": {
+    "general": 5
+  },
+  "avg_memory_usage": 177.708984375,
+  "max_memory_usage": 178.40625
+}

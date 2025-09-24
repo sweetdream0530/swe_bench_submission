@@ -1,0 +1,18 @@
+2025-09-24 15:00:23,024 - INFO - Starting trajectory validation
+2025-09-24 15:00:23,024 - INFO - Validating instance: astropy__astropy-14539
+2025-09-24 15:00:23,025 - INFO - Validating instance: astropy__astropy-14508
+2025-09-24 15:00:23,025 - INFO - Validating instance: astropy__astropy-13453
+2025-09-24 15:00:23,025 - INFO - Validating instance: astropy__astropy-13977
+2025-09-24 15:00:23,026 - INFO - Validating instance: astropy__astropy-14182
+2025-09-24 15:00:23,026 - INFO - Validating instance: astropy__astropy-14369
+2025-09-24 15:00:23,026 - INFO - Validating instance: astropy__astropy-12907
+2025-09-24 15:00:23,027 - INFO - Validating instance: astropy__astropy-13398
+2025-09-24 15:00:23,027 - INFO - Validating instance: astropy__astropy-14995
+2025-09-24 15:00:23,028 - INFO - Validating instance: astropy__astropy-14096
+2025-09-24 15:00:23,028 - INFO - Validating instance: astropy__astropy-14598
+2025-09-24 15:00:23,028 - INFO - Validating instance: astropy__astropy-13033
+2025-09-24 15:00:23,029 - INFO - Validating instance: astropy__astropy-14365
+2025-09-24 15:00:23,029 - INFO - Validating instance: astropy__astropy-14309
+2025-09-24 15:00:23,029 - INFO - Validating instance: astropy__astropy-13236
+2025-09-24 15:00:23,030 - INFO - Validating instance: astropy__astropy-13579
+2025-09-24 15:00:23,031 - INFO - Validation complete: 0/16 compliant

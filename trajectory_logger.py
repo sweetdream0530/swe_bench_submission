@@ -60,7 +60,7 @@ class TrajectoryLogger:
                            model_name: str, messages: List[Dict], 
                            response: str, metadata: Dict[str, Any] = None):
         """
-        Logs LLM interactions with detailed information.
+        Logs LLM interactions with detailed information including all inputs and outputs.
         
         Args:
             instance_id (str): The unique ID of the current task instance.
@@ -76,10 +76,128 @@ class TrajectoryLogger:
             "response": response,
             "input_tokens": self._estimate_tokens(messages),
             "output_tokens": self._estimate_tokens([response]),
-            "metadata": metadata or {}
+            "metadata": metadata or {},
+            "interaction_id": f"{instance_id}_{step_number}_{int(time.time())}",
+            "timestamp": datetime.now().isoformat(),
+            "model_version": metadata.get('model_version', 'unknown') if metadata else 'unknown',
+            "temperature": metadata.get('temperature', 0.0) if metadata else 0.0,
+            "max_tokens": metadata.get('max_tokens', None) if metadata else None,
+            "stop_sequences": metadata.get('stop_sequences', []) if metadata else [],
+            "system_prompt": self._extract_system_prompt(messages),
+            "user_prompt": self._extract_user_prompt(messages),
+            "response_length": len(response),
+            "response_preview": response[:200] + "..." if len(response) > 200 else response
         }
         
         self.log_step(instance_id, step_number, "llm_interaction", details)
+    
+    def log_model_selection_decision(self, instance_id: str, step_number: int,
+                                    available_models: List[str], selected_model: str,
+                                    selection_reason: str, performance_metrics: Dict[str, Any] = None):
+        """
+        Logs model selection decisions with reasoning.
+        
+        Args:
+            instance_id (str): The unique ID of the current task instance.
+            step_number (int): The sequential number of the current step.
+            available_models (List[str]): List of available models.
+            selected_model (str): The selected model.
+            selection_reason (str): Reason for selecting this model.
+            performance_metrics (Dict[str, Any]): Performance metrics for the decision.
+        """
+        details = {
+            "decision_type": "model_selection",
+            "available_models": available_models,
+            "selected_model": selected_model,
+            "selection_reason": selection_reason,
+            "performance_metrics": performance_metrics or {},
+            "decision_timestamp": datetime.now().isoformat(),
+            "confidence_score": performance_metrics.get('confidence', 0.0) if performance_metrics else 0.0
+        }
+        
+        self.log_step(instance_id, step_number, "model_selection", details)
+    
+    def log_strategy_selection_decision(self, instance_id: str, step_number: int,
+                                       available_strategies: List[str], selected_strategy: str,
+                                       selection_reason: str, context: Dict[str, Any] = None):
+        """
+        Logs strategy selection decisions with reasoning.
+        
+        Args:
+            instance_id (str): The unique ID of the current task instance.
+            step_number (int): The sequential number of the current step.
+            available_strategies (List[str]): List of available strategies.
+            selected_strategy (str): The selected strategy.
+            selection_reason (str): Reason for selecting this strategy.
+            context (Dict[str, Any]): Context information for the decision.
+        """
+        details = {
+            "decision_type": "strategy_selection",
+            "available_strategies": available_strategies,
+            "selected_strategy": selected_strategy,
+            "selection_reason": selection_reason,
+            "context": context or {},
+            "decision_timestamp": datetime.now().isoformat(),
+            "decision_id": f"{instance_id}_{step_number}_strategy_{int(time.time())}"
+        }
+        
+        self.log_step(instance_id, step_number, "strategy_selection", details)
+    
+    def log_filtering_decision(self, instance_id: str, step_number: int,
+                              filter_type: str, input_data: Any, filtered_data: Any,
+                              filter_criteria: Dict[str, Any], decision_reason: str):
+        """
+        Logs filtering decisions with detailed information.
+        
+        Args:
+            instance_id (str): The unique ID of the current task instance.
+            step_number (int): The sequential number of the current step.
+            filter_type (str): Type of filtering applied.
+            input_data (Any): Data before filtering.
+            filtered_data (Any): Data after filtering.
+            filter_criteria (Dict[str, Any]): Criteria used for filtering.
+            decision_reason (str): Reason for the filtering decision.
+        """
+        details = {
+            "filter_type": filter_type,
+            "input_data": str(input_data)[:1000],  # Truncate large data
+            "filtered_data": str(filtered_data)[:1000],
+            "filter_criteria": filter_criteria,
+            "decision_reason": decision_reason,
+            "filter_timestamp": datetime.now().isoformat(),
+            "input_size": len(str(input_data)) if input_data else 0,
+            "output_size": len(str(filtered_data)) if filtered_data else 0,
+            "filter_efficiency": len(str(filtered_data)) / max(1, len(str(input_data))) if input_data else 0
+        }
+        
+        self.log_step(instance_id, step_number, "filtering_decision", details)
+    
+    def log_path_selection_decision(self, instance_id: str, step_number: int,
+                                  available_paths: List[Dict[str, Any]], selected_path: Dict[str, Any],
+                                  selection_reason: str, path_metrics: Dict[str, Any] = None):
+        """
+        Logs path selection decisions in self-consistency reasoning.
+        
+        Args:
+            instance_id (str): The unique ID of the current task instance.
+            step_number (int): The sequential number of the current step.
+            available_paths (List[Dict[str, Any]]): List of available reasoning paths.
+            selected_path (Dict[str, Any]): The selected path.
+            selection_reason (str): Reason for selecting this path.
+            path_metrics (Dict[str, Any]): Metrics for path evaluation.
+        """
+        details = {
+            "decision_type": "path_selection",
+            "available_paths": available_paths,
+            "selected_path": selected_path,
+            "selection_reason": selection_reason,
+            "path_metrics": path_metrics or {},
+            "decision_timestamp": datetime.now().isoformat(),
+            "total_paths": len(available_paths),
+            "selected_path_id": selected_path.get('path_id', 'unknown')
+        }
+        
+        self.log_step(instance_id, step_number, "path_selection", details)
     
     def log_tool_call(self, instance_id: str, step_number: int,
                      tool_name: str, tool_args: Dict[str, Any],
@@ -270,9 +388,45 @@ class TrajectoryLogger:
         total_text = " ".join(str(item) for item in text_list)
         return len(total_text.split())  # Rough estimation
     
-    def _get_session_id(self) -> str:
-        """Generate a session ID."""
-        return f"session_{int(time.time())}"
+    def _extract_system_prompt(self, messages: List[Dict]) -> str:
+        """Extract system prompt from messages."""
+        for message in messages:
+            if message.get('role') == 'system':
+                return message.get('content', '')
+        return ''
+    
+    def _extract_user_prompt(self, messages: List[Dict]) -> str:
+        """Extract user prompt from messages."""
+        user_prompts = []
+        for message in messages:
+            if message.get('role') == 'user':
+                user_prompts.append(message.get('content', ''))
+        return '\n'.join(user_prompts)
+    
+    def log_comprehensive_interaction(self, instance_id: str, step_number: int,
+                                   interaction_data: Dict[str, Any]):
+        """
+        Logs a comprehensive interaction with all available data.
+        
+        Args:
+            instance_id (str): The unique ID of the current task instance.
+            step_number (int): The sequential number of the current step.
+            interaction_data (Dict[str, Any]): Complete interaction data.
+        """
+        details = {
+            "interaction_type": interaction_data.get('type', 'unknown'),
+            "model_name": interaction_data.get('model_name', 'unknown'),
+            "input_data": interaction_data.get('input_data', {}),
+            "output_data": interaction_data.get('output_data', {}),
+            "metadata": interaction_data.get('metadata', {}),
+            "performance": interaction_data.get('performance', {}),
+            "decisions": interaction_data.get('decisions', []),
+            "filtering_applied": interaction_data.get('filtering_applied', []),
+            "timestamp": datetime.now().isoformat(),
+            "interaction_id": f"{instance_id}_{step_number}_{int(time.time())}"
+        }
+        
+        self.log_step(instance_id, step_number, "comprehensive_interaction", details)
 
 # Example Usage:
 if __name__ == "__main__":

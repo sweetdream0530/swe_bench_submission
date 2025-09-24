@@ -1,0 +1,18 @@
+2025-09-24 08:57:03,900 - INFO - 🚀 Starting SWE-Bench evaluation
+2025-09-24 08:57:03,900 - INFO - 📁 Output file: results/predictions/test_predictions.jsonl
+2025-09-24 08:57:03,900 - INFO - 📊 Trajectory directory: results/trajectories
+2025-09-24 08:57:03,900 - INFO - ⚙️ Max workers: 2
+2025-09-24 08:57:03,900 - INFO - ⏰ Timeout: 1200s
+2025-09-24 08:57:03,900 - INFO - 📥 Loading dataset: princeton-nlp/SWE-bench_Verified
+2025-09-24 08:57:06,189 - INFO - ✅ Loaded 500 instances from dataset
+2025-09-24 08:57:06,190 - INFO - 🔢 Limited to 13 instances
+2025-09-24 08:57:06,190 - INFO - 🚀 Starting parallel processing with 2 workers
+2025-09-24 08:57:06,203 - ERROR - ❌ Evaluation failed: string indices must be integers, not 'str'
+2025-09-24 08:57:06,205 - ERROR - Traceback (most recent call last):
+  File "/root/swe_bench_submission/evaluate_swe_bench.py", line 338, in run_evaluation
+    predictions = self.process_instances_parallel(instances)
+  File "/root/swe_bench_submission/evaluate_swe_bench.py", line 223, in process_instances_parallel
+    instance_id = instance['instance_id']
+                  ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+

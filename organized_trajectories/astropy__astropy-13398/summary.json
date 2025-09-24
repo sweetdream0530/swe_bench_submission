@@ -1,0 +1,50 @@
+{
+  "instance_id": "astropy__astropy-13398",
+  "organization_timestamp": "2025-09-24T14:59:12.998377",
+  "summary": {
+    "total_trajectory_entries": 14,
+    "llm_interactions_count": 0,
+    "tool_calls_count": 0,
+    "filtering_decisions_count": 0,
+    "performance_metrics": {
+      "total_steps": 14,
+      "llm_interactions": 0,
+      "tool_calls": 0,
+      "filtering_decisions": 0,
+      "total_duration": 5.4836273193359375e-06,
+      "memory_usage": [
+        130.3515625,
+        92.59375,
+        93.3125,
+        93.3125,
+        92.7421875,
+        93.33984375,
+        93.33984375,
+        105.69140625,
+        169.28515625,
+        169.28515625,
+        169.28515625,
+        196.89453125
+      ],
+      "step_types": {
+        "general": 14
+      },
+      "avg_memory_usage": 124.95279947916667,
+      "max_memory_usage": 196.89453125
+    }
+  },
+  "structure": {
+    "llm_interactions": "llm_interactions/interactions.json",
+    "tool_calls": "tool_calls/calls.json",
+    "filtering_decisions": "filtering_decisions/decisions.json",
+    "performance_metrics": "performance_metrics/metrics.json",
+    "raw_trajectory": "raw_logs/trajectory.jsonl"
+  },
+  "walkability": {
+    "has_llm_inputs": false,
+    "has_llm_outputs": false,
+    "has_filtering_decisions": false,
+    "has_tool_calls": false,
+    "is_walkable": false
+  }
+}

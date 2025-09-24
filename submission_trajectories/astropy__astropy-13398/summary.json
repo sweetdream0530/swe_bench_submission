@@ -1,0 +1,27 @@
+{
+  "instance_id": "astropy__astropy-13398",
+  "total_steps": 14,
+  "sessions": [
+    "session_1758673623",
+    "session_1758654511",
+    "session_1758651316",
+    "session_1758673615",
+    "session_1758644314",
+    "session_1758655136",
+    "session_1758651302",
+    "session_1758654524",
+    "session_1758674142"
+  ],
+  "final_result": {
+    "success": true,
+    "patch_length": 110,
+    "message": "Success"
+  },
+  "performance_summary": {
+    "total_steps": 4,
+    "avg_step_time": 0.0,
+    "total_llm_interactions": 0,
+    "total_tool_calls": 0,
+    "memory_usage_mb": 196.89453125
+  }
+}

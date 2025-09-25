@@ -272,3 +272,4 @@ logger.log_filtering_decision(
 5. **Reproducibility**: Full trace of execution path
 
 This enhanced structure ensures that every LLM decision can be walked through, providing complete transparency and traceability for SWE-bench submissions.
+

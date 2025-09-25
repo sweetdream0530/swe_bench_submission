@@ -13,7 +13,7 @@ import httpx
 from .base import InferenceProvider
 from proxy.models import GPTMessage
 from proxy.config import (
-    CHUTES_API_KEY,
+    CHUTES_API_KEYS,
     CHUTES_INFERENCE_URL,
     MODEL_PRICING,
 )
@@ -25,7 +25,9 @@ class ChutesProvider(InferenceProvider):
     """Provider for Chutes API inference"""
     
     def __init__(self):
-        self.api_key = CHUTES_API_KEY
+        self.api_keys = CHUTES_API_KEYS
+        self.current_key_index = 0
+        self.failed_keys = set()  # Track keys that have failed recently
         
     @property
     def name(self) -> str:
@@ -33,7 +35,36 @@ class ChutesProvider(InferenceProvider):
     
     def is_available(self) -> bool:
         """Check if Chutes provider is available"""
-        return bool(self.api_key)
+        return len(self.api_keys) > 0
+    
+    def get_current_api_key(self) -> str:
+        """Get the current API key, rotating if necessary"""
+        if not self.api_keys:
+            raise RuntimeError("No Chutes API keys available")
+        
+        # Find next available key
+        attempts = 0
+        while attempts < len(self.api_keys):
+            current_key = self.api_keys[self.current_key_index]
+            if current_key not in self.failed_keys:
+                return current_key
+            
+            # Move to next key
+            self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
+            attempts += 1
+        
+        # If all keys failed, reset failed keys and try again
+        logger.warning("All API keys have failed recently, resetting failed keys list")
+        self.failed_keys.clear()
+        return self.api_keys[self.current_key_index]
+    
+    def mark_key_as_failed(self, api_key: str):
+        """Mark an API key as failed (likely due to rate limits)"""
+        self.failed_keys.add(api_key)
+        logger.warning(f"Marked API key as failed: {api_key[:10]}...")
+        
+        # Move to next key
+        self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
     
     def supports_model(self, model: str) -> bool:
         """Check if model is supported by Chutes (supports all models in pricing)"""
@@ -55,7 +86,7 @@ class ChutesProvider(InferenceProvider):
         """Perform inference using Chutes API"""
         
         if not self.is_available():
-            raise RuntimeError("Chutes API key not set")
+            raise RuntimeError("No Chutes API keys available")
             
         if not self.supports_model(model):
             raise ValueError(f"Model {model} not supported by Chutes provider")
@@ -67,11 +98,34 @@ class ChutesProvider(InferenceProvider):
                 if message:
                     messages_dict.append({"role": message.role, "content": message.content})
 
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-        }
-
+        # Try with current API key, rotate if it fails
+        max_retries = len(self.api_keys)
+        for attempt in range(max_retries):
+            try:
+                current_api_key = self.get_current_api_key()
+                headers = {
+                    "Authorization": f"Bearer {current_api_key}",
+                    "Content-Type": "application/json",
+                }
+                
+                return await self._make_inference_request(headers, messages_dict, model, temperature, run_id)
+                
+            except Exception as e:
+                error_msg = str(e).lower()
+                # Check if this is a rate limit or quota exceeded error
+                if any(keyword in error_msg for keyword in ['rate limit', 'quota', 'limit exceeded', '429', 'too many requests']):
+                    logger.warning(f"Rate limit hit with API key, rotating to next key: {current_api_key[:10]}...")
+                    self.mark_key_as_failed(current_api_key)
+                    continue
+                else:
+                    # For non-rate-limit errors, re-raise immediately
+                    raise e
+        
+        # If we've exhausted all keys, raise an error
+        raise RuntimeError("All Chutes API keys have been exhausted due to rate limits")
+    
+    async def _make_inference_request(self, headers: dict, messages_dict: list, model: str, temperature: float, run_id: UUID) -> tuple[str, int]:
+        """Make the actual inference request to Chutes API"""
         body = {
             "model": model,
             "messages": messages_dict,
@@ -97,7 +151,8 @@ class ChutesProvider(InferenceProvider):
                     logger.error(
                         f"Chutes API request failed for run {run_id} (model: {model}): {response.status_code} - {error_message}"
                     )
-                    return error_message, response.status_code
+                    # Raise an exception that can be caught by the retry logic
+                    raise RuntimeError(f"HTTP {response.status_code}: {error_message}")
 
                 # Process streaming response
                 async for chunk in response.aiter_lines():

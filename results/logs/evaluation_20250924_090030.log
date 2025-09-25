@@ -1901,3 +1901,1326 @@ next_tool_args: {'file_path': './astropy/io/ascii/tests/test_rst.py'}
 next_tool_name: find_relevant_tests_in_file
 next_tool_args: {'file_path': './astropy/io/ascii/tests/test_fixedwidth.py'}
 
+2025-09-25 02:50:17,618 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,618 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,618 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,618 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,618 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,618 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,619 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,620 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,621 - ERROR - --------------------------------
+2025-09-25 02:50:17,622 - ERROR - --------------------------------
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,622 - ERROR - response: not defined
+2025-09-25 02:50:17,623 - ERROR - response: not defined
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,623 - ERROR - --------------------------------
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:17,624 - INFO - [agent] Retrying in 2.0 seconds... (attempt 1/10)
+2025-09-25 02:50:21,759 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa7a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,760 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,760 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,760 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,761 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,761 - ERROR - --------------------------------
+2025-09-25 02:50:21,761 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,761 - ERROR - --------------------------------
+2025-09-25 02:50:21,761 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,775 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fabe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,775 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,775 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,775 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,775 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,775 - ERROR - --------------------------------
+2025-09-25 02:50:21,775 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,775 - ERROR - --------------------------------
+2025-09-25 02:50:21,775 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,794 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9e10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,794 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,794 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,794 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,794 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,794 - ERROR - --------------------------------
+2025-09-25 02:50:21,794 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,794 - ERROR - --------------------------------
+2025-09-25 02:50:21,794 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,816 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b73b8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,816 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,817 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,817 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,818 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,818 - ERROR - --------------------------------
+2025-09-25 02:50:21,819 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa690>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,819 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,819 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,820 - ERROR - --------------------------------
+2025-09-25 02:50:21,821 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,821 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,821 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,822 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,822 - ERROR - --------------------------------
+2025-09-25 02:50:21,823 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,823 - ERROR - --------------------------------
+2025-09-25 02:50:21,823 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,891 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa580>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,891 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,891 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,892 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,892 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,892 - ERROR - --------------------------------
+2025-09-25 02:50:21,892 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,892 - ERROR - --------------------------------
+2025-09-25 02:50:21,892 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,956 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9ae0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,956 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,956 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,957 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,957 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,957 - ERROR - --------------------------------
+2025-09-25 02:50:21,957 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,957 - ERROR - --------------------------------
+2025-09-25 02:50:21,957 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:21,977 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa360>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:21,977 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:21,977 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:21,977 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:21,977 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:21,977 - ERROR - --------------------------------
+2025-09-25 02:50:21,977 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:21,977 - ERROR - --------------------------------
+2025-09-25 02:50:21,977 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:22,028 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa470>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:22,028 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:22,029 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:22,029 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:22,030 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:22,030 - ERROR - --------------------------------
+2025-09-25 02:50:22,031 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa9c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:22,031 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:22,032 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:22,032 - ERROR - --------------------------------
+2025-09-25 02:50:22,033 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:22,033 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:22,034 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:22,034 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:22,035 - ERROR - --------------------------------
+2025-09-25 02:50:22,035 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:22,035 - ERROR - --------------------------------
+2025-09-25 02:50:22,035 - INFO - [agent] Retrying in 4.0 seconds... (attempt 2/10)
+2025-09-25 02:50:29,896 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f8050>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:29,896 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:29,896 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:29,897 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:29,897 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:29,897 - ERROR - --------------------------------
+2025-09-25 02:50:29,898 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:29,898 - ERROR - --------------------------------
+2025-09-25 02:50:29,898 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:29,946 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f8270>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:29,946 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:29,946 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:29,946 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:29,946 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:29,946 - ERROR - --------------------------------
+2025-09-25 02:50:29,947 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:29,947 - ERROR - --------------------------------
+2025-09-25 02:50:29,947 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:29,998 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fae00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:29,998 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:29,998 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:29,999 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:29,999 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:29,999 - ERROR - --------------------------------
+2025-09-25 02:50:30,000 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,000 - ERROR - --------------------------------
+2025-09-25 02:50:30,000 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,246 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb020>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,247 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,247 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,248 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,248 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,248 - ERROR - --------------------------------
+2025-09-25 02:50:30,248 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,249 - ERROR - --------------------------------
+2025-09-25 02:50:30,249 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,309 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb240>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,310 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,310 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,310 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,310 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,311 - ERROR - --------------------------------
+2025-09-25 02:50:30,311 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,311 - ERROR - --------------------------------
+2025-09-25 02:50:30,312 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,334 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,335 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,335 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,335 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,335 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,335 - ERROR - --------------------------------
+2025-09-25 02:50:30,335 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,335 - ERROR - --------------------------------
+2025-09-25 02:50:30,335 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,419 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb680>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,420 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,420 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,420 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,421 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,421 - ERROR - --------------------------------
+2025-09-25 02:50:30,421 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,422 - ERROR - --------------------------------
+2025-09-25 02:50:30,422 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,430 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,430 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,430 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,430 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,430 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,430 - ERROR - --------------------------------
+2025-09-25 02:50:30,430 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,430 - ERROR - --------------------------------
+2025-09-25 02:50:30,430 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,499 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b73b8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,499 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,499 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,500 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,500 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,500 - ERROR - --------------------------------
+2025-09-25 02:50:30,501 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,501 - ERROR - --------------------------------
+2025-09-25 02:50:30,501 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:30,787 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb790>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:30,787 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:30,788 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:30,788 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:30,788 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:30,789 - ERROR - --------------------------------
+2025-09-25 02:50:30,789 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:30,789 - ERROR - --------------------------------
+2025-09-25 02:50:30,789 - INFO - [agent] Retrying in 8.0 seconds... (attempt 3/10)
+2025-09-25 02:50:46,239 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb570>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:46,240 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:46,240 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:46,240 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:46,240 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:46,241 - ERROR - --------------------------------
+2025-09-25 02:50:46,241 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:46,241 - ERROR - --------------------------------
+2025-09-25 02:50:46,241 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:46,411 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:46,412 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:46,412 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:46,412 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:46,413 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:46,413 - ERROR - --------------------------------
+2025-09-25 02:50:46,413 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:46,413 - ERROR - --------------------------------
+2025-09-25 02:50:46,413 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:46,708 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb130>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:46,709 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:46,709 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:46,709 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:46,710 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:46,710 - ERROR - --------------------------------
+2025-09-25 02:50:46,710 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:46,710 - ERROR - --------------------------------
+2025-09-25 02:50:46,711 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:46,804 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5faf10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:46,804 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:46,804 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:46,805 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:46,805 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:46,805 - ERROR - --------------------------------
+2025-09-25 02:50:46,805 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:46,806 - ERROR - --------------------------------
+2025-09-25 02:50:46,806 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:46,867 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5facf0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:46,867 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:46,868 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:46,868 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:46,868 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:46,868 - ERROR - --------------------------------
+2025-09-25 02:50:46,869 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:46,869 - ERROR - --------------------------------
+2025-09-25 02:50:46,869 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:47,480 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5faad0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:47,480 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:47,480 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:47,480 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:47,480 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:47,480 - ERROR - --------------------------------
+2025-09-25 02:50:47,480 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:47,480 - ERROR - --------------------------------
+2025-09-25 02:50:47,480 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:47,537 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f99d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:47,537 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:47,537 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:47,537 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:47,537 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:47,537 - ERROR - --------------------------------
+2025-09-25 02:50:47,537 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:47,537 - ERROR - --------------------------------
+2025-09-25 02:50:47,537 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:47,551 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa8b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:47,552 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:47,552 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:47,552 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:47,552 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:47,552 - ERROR - --------------------------------
+2025-09-25 02:50:47,552 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:47,552 - ERROR - --------------------------------
+2025-09-25 02:50:47,552 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:47,818 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9f20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:47,818 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:47,818 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:47,818 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:47,818 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:47,818 - ERROR - --------------------------------
+2025-09-25 02:50:47,818 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:47,818 - ERROR - --------------------------------
+2025-09-25 02:50:47,818 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:50:48,257 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9d00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:50:48,257 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:50:48,257 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:50:48,257 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:50:48,257 - INFO - [Errno 5] Input/output error
+2025-09-25 02:50:48,257 - ERROR - --------------------------------
+2025-09-25 02:50:48,257 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:50:48,257 - ERROR - --------------------------------
+2025-09-25 02:50:48,257 - INFO - [agent] Retrying in 8 seconds... (attempt 4/10)
+2025-09-25 02:51:02,821 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa140>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:02,821 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:02,821 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:02,822 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:02,822 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:02,822 - ERROR - --------------------------------
+2025-09-25 02:51:02,823 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:02,823 - ERROR - --------------------------------
+2025-09-25 02:51:02,823 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:03,067 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f98c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:03,068 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:03,068 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:03,068 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:03,069 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:03,069 - ERROR - --------------------------------
+2025-09-25 02:51:03,069 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:03,069 - ERROR - --------------------------------
+2025-09-25 02:51:03,070 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:03,234 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9e10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:03,235 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:03,235 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:03,235 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:03,236 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:03,236 - ERROR - --------------------------------
+2025-09-25 02:51:03,236 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:03,236 - ERROR - --------------------------------
+2025-09-25 02:51:03,237 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:03,292 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fabe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:03,292 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:03,292 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:03,292 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:03,292 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:03,292 - ERROR - --------------------------------
+2025-09-25 02:51:03,292 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:03,292 - ERROR - --------------------------------
+2025-09-25 02:51:03,292 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:03,614 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b73b8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:03,615 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:03,615 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:03,616 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:03,616 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:03,616 - ERROR - --------------------------------
+2025-09-25 02:51:03,616 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:03,617 - ERROR - --------------------------------
+2025-09-25 02:51:03,617 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:04,348 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa250>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:04,348 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:04,349 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:04,349 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:04,349 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:04,350 - ERROR - --------------------------------
+2025-09-25 02:51:04,350 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:04,350 - ERROR - --------------------------------
+2025-09-25 02:51:04,350 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:04,475 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa030>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:04,475 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:04,475 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:04,476 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:04,476 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:04,476 - ERROR - --------------------------------
+2025-09-25 02:51:04,476 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:04,477 - ERROR - --------------------------------
+2025-09-25 02:51:04,477 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:04,942 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa690>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:04,943 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:04,943 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:04,944 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:04,944 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:04,944 - ERROR - --------------------------------
+2025-09-25 02:51:04,944 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:04,944 - ERROR - --------------------------------
+2025-09-25 02:51:04,945 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:05,134 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa580>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:05,134 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:05,135 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:05,135 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:05,135 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:05,136 - ERROR - --------------------------------
+2025-09-25 02:51:05,136 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:05,136 - ERROR - --------------------------------
+2025-09-25 02:51:05,136 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:05,809 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9ae0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:05,810 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:05,810 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:05,810 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:05,811 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:05,811 - ERROR - --------------------------------
+2025-09-25 02:51:05,811 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:05,811 - ERROR - --------------------------------
+2025-09-25 02:51:05,811 - INFO - [agent] Retrying in 8 seconds... (attempt 5/10)
+2025-09-25 02:51:19,248 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa360>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:19,248 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:19,248 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:19,249 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:19,249 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:19,249 - ERROR - --------------------------------
+2025-09-25 02:51:19,249 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:19,250 - ERROR - --------------------------------
+2025-09-25 02:51:19,250 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:19,943 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa470>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:19,943 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:19,944 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:19,944 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:19,944 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:19,945 - ERROR - --------------------------------
+2025-09-25 02:51:19,945 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:19,945 - ERROR - --------------------------------
+2025-09-25 02:51:19,945 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:20,165 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa9c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:20,165 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:20,166 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:20,166 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:20,166 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:20,167 - ERROR - --------------------------------
+2025-09-25 02:51:20,167 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:20,167 - ERROR - --------------------------------
+2025-09-25 02:51:20,167 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:20,333 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f8050>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:20,334 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:20,334 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:20,334 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:20,335 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:20,335 - ERROR - --------------------------------
+2025-09-25 02:51:20,335 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:20,335 - ERROR - --------------------------------
+2025-09-25 02:51:20,335 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:20,383 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f8270>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:20,383 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:20,383 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:20,383 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:20,383 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:20,383 - ERROR - --------------------------------
+2025-09-25 02:51:20,384 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:20,384 - ERROR - --------------------------------
+2025-09-25 02:51:20,384 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:21,039 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fae00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:21,039 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:21,040 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:21,040 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:21,040 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:21,041 - ERROR - --------------------------------
+2025-09-25 02:51:21,041 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:21,041 - ERROR - --------------------------------
+2025-09-25 02:51:21,041 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:21,428 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb020>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:21,429 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:21,444 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:21,444 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:21,444 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:21,445 - ERROR - --------------------------------
+2025-09-25 02:51:21,445 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:21,445 - ERROR - --------------------------------
+2025-09-25 02:51:21,445 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:21,884 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb240>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:21,885 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:21,885 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:21,885 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:21,886 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:21,886 - ERROR - --------------------------------
+2025-09-25 02:51:21,886 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:21,886 - ERROR - --------------------------------
+2025-09-25 02:51:21,887 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:21,978 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:21,979 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:21,979 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:21,980 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:21,980 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:21,980 - ERROR - --------------------------------
+2025-09-25 02:51:21,980 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:21,980 - ERROR - --------------------------------
+2025-09-25 02:51:21,980 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:22,864 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa7a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:22,864 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:22,864 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:22,864 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:22,864 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:22,864 - ERROR - --------------------------------
+2025-09-25 02:51:22,864 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:22,864 - ERROR - --------------------------------
+2025-09-25 02:51:22,864 - INFO - [agent] Retrying in 8 seconds... (attempt 6/10)
+2025-09-25 02:51:35,503 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b73b8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:35,503 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:35,504 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:35,504 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:35,504 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:35,504 - ERROR - --------------------------------
+2025-09-25 02:51:35,505 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:35,505 - ERROR - --------------------------------
+2025-09-25 02:51:35,505 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:36,543 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb680>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:36,543 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:36,544 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:36,544 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:36,544 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:36,545 - ERROR - --------------------------------
+2025-09-25 02:51:36,545 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:36,545 - ERROR - --------------------------------
+2025-09-25 02:51:36,545 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:36,647 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb790>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:36,648 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:36,648 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:36,648 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:36,648 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:36,649 - ERROR - --------------------------------
+2025-09-25 02:51:36,649 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:36,649 - ERROR - --------------------------------
+2025-09-25 02:51:36,649 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:36,708 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb570>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:36,709 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:36,709 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:36,709 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:36,709 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:36,710 - ERROR - --------------------------------
+2025-09-25 02:51:36,710 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:36,710 - ERROR - --------------------------------
+2025-09-25 02:51:36,710 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:36,932 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:36,933 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:36,933 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:36,933 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:36,934 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:36,934 - ERROR - --------------------------------
+2025-09-25 02:51:36,934 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:36,934 - ERROR - --------------------------------
+2025-09-25 02:51:36,935 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:37,552 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb130>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:37,553 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:37,565 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:37,566 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:37,566 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:37,566 - ERROR - --------------------------------
+2025-09-25 02:51:37,566 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:37,567 - ERROR - --------------------------------
+2025-09-25 02:51:37,567 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:38,046 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5faf10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:38,047 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:38,047 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:38,048 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:38,048 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:38,048 - ERROR - --------------------------------
+2025-09-25 02:51:38,049 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:38,049 - ERROR - --------------------------------
+2025-09-25 02:51:38,049 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:38,118 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5facf0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:38,119 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:38,119 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:38,119 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:38,120 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:38,120 - ERROR - --------------------------------
+2025-09-25 02:51:38,120 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:38,120 - ERROR - --------------------------------
+2025-09-25 02:51:38,120 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:38,935 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5faad0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:38,935 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:38,936 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:38,936 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:38,936 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:38,937 - ERROR - --------------------------------
+2025-09-25 02:51:38,937 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:38,937 - ERROR - --------------------------------
+2025-09-25 02:51:38,937 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:39,193 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f99d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:39,194 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:39,194 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:39,194 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:39,194 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:39,195 - ERROR - --------------------------------
+2025-09-25 02:51:39,195 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:39,195 - ERROR - --------------------------------
+2025-09-25 02:51:39,195 - INFO - [agent] Retrying in 8 seconds... (attempt 7/10)
+2025-09-25 02:51:52,612 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa8b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:52,612 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:52,612 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:52,613 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:52,613 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:52,613 - ERROR - --------------------------------
+2025-09-25 02:51:52,613 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:52,614 - ERROR - --------------------------------
+2025-09-25 02:51:52,614 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:53,395 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9f20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:53,395 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:53,395 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:53,396 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:53,396 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:53,396 - ERROR - --------------------------------
+2025-09-25 02:51:53,397 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:53,397 - ERROR - --------------------------------
+2025-09-25 02:51:53,397 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:53,812 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9d00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:53,812 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:53,813 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:53,813 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:53,813 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:53,814 - ERROR - --------------------------------
+2025-09-25 02:51:53,814 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:53,814 - ERROR - --------------------------------
+2025-09-25 02:51:53,814 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:54,044 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa140>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:54,045 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:54,045 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:54,045 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:54,045 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:54,046 - ERROR - --------------------------------
+2025-09-25 02:51:54,046 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:54,046 - ERROR - --------------------------------
+2025-09-25 02:51:54,046 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:54,104 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f98c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:54,105 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:54,105 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:54,105 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:54,105 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:54,106 - ERROR - --------------------------------
+2025-09-25 02:51:54,106 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:54,106 - ERROR - --------------------------------
+2025-09-25 02:51:54,106 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:54,681 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fbac0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:54,681 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:54,681 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:54,681 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:54,681 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:54,681 - ERROR - --------------------------------
+2025-09-25 02:51:54,681 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:54,681 - ERROR - --------------------------------
+2025-09-25 02:51:54,682 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:54,761 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b73b8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:54,762 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:54,762 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:54,762 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:54,763 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:54,763 - ERROR - --------------------------------
+2025-09-25 02:51:54,763 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:54,763 - ERROR - --------------------------------
+2025-09-25 02:51:54,763 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:55,048 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9e10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:55,049 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:55,049 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:55,049 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:55,050 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:55,050 - ERROR - --------------------------------
+2025-09-25 02:51:55,050 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:55,050 - ERROR - --------------------------------
+2025-09-25 02:51:55,050 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:56,306 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa250>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:56,307 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:56,307 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:56,308 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:56,308 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:56,308 - ERROR - --------------------------------
+2025-09-25 02:51:56,308 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:56,309 - ERROR - --------------------------------
+2025-09-25 02:51:56,309 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:51:56,384 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa030>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:51:56,385 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:51:56,385 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:51:56,386 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:51:56,386 - INFO - [Errno 5] Input/output error
+2025-09-25 02:51:56,386 - ERROR - --------------------------------
+2025-09-25 02:51:56,386 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:51:56,387 - ERROR - --------------------------------
+2025-09-25 02:51:56,387 - INFO - [agent] Retrying in 8 seconds... (attempt 8/10)
+2025-09-25 02:52:09,060 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa690>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:09,061 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:09,061 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:09,061 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:09,062 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:09,062 - ERROR - --------------------------------
+2025-09-25 02:52:09,062 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:09,062 - ERROR - --------------------------------
+2025-09-25 02:52:09,063 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:09,975 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa580>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:09,975 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:09,976 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:09,976 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:09,976 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:09,976 - ERROR - --------------------------------
+2025-09-25 02:52:09,977 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:09,977 - ERROR - --------------------------------
+2025-09-25 02:52:09,977 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:10,234 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f9ae0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:10,234 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:10,234 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:10,235 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:10,235 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:10,235 - ERROR - --------------------------------
+2025-09-25 02:52:10,236 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:10,236 - ERROR - --------------------------------
+2025-09-25 02:52:10,236 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:10,302 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa360>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:10,302 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:10,303 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:10,303 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:10,303 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:10,304 - ERROR - --------------------------------
+2025-09-25 02:52:10,304 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:10,304 - ERROR - --------------------------------
+2025-09-25 02:52:10,304 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:10,557 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa470>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:10,558 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:10,558 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:10,558 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:10,559 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:10,559 - ERROR - --------------------------------
+2025-09-25 02:52:10,559 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:10,559 - ERROR - --------------------------------
+2025-09-25 02:52:10,560 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:10,820 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fa9c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:10,820 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:10,820 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:10,821 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:10,821 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:10,821 - ERROR - --------------------------------
+2025-09-25 02:52:10,821 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:10,822 - ERROR - --------------------------------
+2025-09-25 02:52:10,822 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:11,756 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f8050>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:11,757 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:11,757 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:11,757 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:11,758 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:11,758 - ERROR - --------------------------------
+2025-09-25 02:52:11,758 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:11,758 - ERROR - --------------------------------
+2025-09-25 02:52:11,758 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:12,184 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5f8270>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:12,185 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:12,185 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:12,185 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:12,186 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:12,186 - ERROR - --------------------------------
+2025-09-25 02:52:12,186 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:12,186 - ERROR - --------------------------------
+2025-09-25 02:52:12,187 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:12,432 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fae00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:12,433 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:12,433 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:12,433 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:12,434 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:12,434 - ERROR - --------------------------------
+2025-09-25 02:52:12,434 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:12,434 - ERROR - --------------------------------
+2025-09-25 02:52:12,435 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:13,875 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb020>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:13,875 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:13,876 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:13,876 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:13,876 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:13,876 - ERROR - --------------------------------
+2025-09-25 02:52:13,877 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:13,877 - ERROR - --------------------------------
+2025-09-25 02:52:13,877 - INFO - [agent] Retrying in 8 seconds... (attempt 9/10)
+2025-09-25 02:52:25,938 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb240>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:25,939 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:25,939 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:25,939 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:25,939 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:25,940 - ERROR - --------------------------------
+2025-09-25 02:52:25,940 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:25,940 - ERROR - --------------------------------
+2025-09-25 02:52:25,940 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:26,295 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fbce0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:26,296 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:26,308 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:26,309 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:26,309 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:26,309 - ERROR - --------------------------------
+2025-09-25 02:52:26,310 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:26,310 - ERROR - --------------------------------
+2025-09-25 02:52:26,310 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:26,684 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b73b8a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:26,684 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:26,684 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:26,685 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:26,685 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:26,685 - ERROR - --------------------------------
+2025-09-25 02:52:26,685 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:26,685 - ERROR - --------------------------------
+2025-09-25 02:52:26,686 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:27,062 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:27,062 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:27,062 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:27,063 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:27,063 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:27,063 - ERROR - --------------------------------
+2025-09-25 02:52:27,063 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:27,063 - ERROR - --------------------------------
+2025-09-25 02:52:27,063 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:27,646 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb680>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:27,647 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:27,647 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:27,647 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:27,648 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:27,648 - ERROR - --------------------------------
+2025-09-25 02:52:27,648 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:27,648 - ERROR - --------------------------------
+2025-09-25 02:52:27,648 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:28,158 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb790>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:28,159 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:28,159 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:28,159 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:28,160 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:28,160 - ERROR - --------------------------------
+2025-09-25 02:52:28,160 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:28,160 - ERROR - --------------------------------
+2025-09-25 02:52:28,160 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:28,621 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb570>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:28,621 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:28,622 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:28,622 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:28,622 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:28,623 - ERROR - --------------------------------
+2025-09-25 02:52:28,623 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:28,623 - ERROR - --------------------------------
+2025-09-25 02:52:28,623 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:28,882 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb350>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:28,883 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:28,883 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:28,883 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:28,884 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:28,884 - ERROR - --------------------------------
+2025-09-25 02:52:28,884 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:28,884 - ERROR - --------------------------------
+2025-09-25 02:52:28,884 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:29,552 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5fb130>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:29,552 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:29,552 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:29,553 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:29,553 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:29,553 - ERROR - --------------------------------
+2025-09-25 02:52:29,553 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:29,553 - ERROR - --------------------------------
+2025-09-25 02:52:29,554 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:30,292 - ERROR - CONNECTION_ERROR: Cannot connect to http://195.201.172.232:8001/agents/inference. Please ensure the AI proxy service is running. Error: HTTPConnectionPool(host='195.201.172.232', port=8001): Max retries exceeded with url: /agents/inference (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3e1b5faf10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-25 02:52:30,293 - INFO - FALLBACK_MODE enabled - returning mock response
+2025-09-25 02:52:30,293 - INFO - Using fallback response due to proxy service unavailability
+2025-09-25 02:52:30,293 - ERROR - Error: [Errno 5] Input/output error
+2025-09-25 02:52:30,294 - INFO - [Errno 5] Input/output error
+2025-09-25 02:52:30,294 - ERROR - --------------------------------
+2025-09-25 02:52:30,294 - ERROR - response: next_thought: I need to analyze the codebase to understand the issue and find a solution.
+next_tool_name: search_in_all_files_content_v2
+next_tool_args: {"query": "Value._resolve_output_field CharField MaxLengthValidator"}
+2025-09-25 02:52:30,294 - ERROR - --------------------------------
+2025-09-25 02:52:30,294 - INFO - [agent] Retrying in 8 seconds... (attempt 10/10)
+2025-09-25 02:52:46,598 - ERROR - [TEST_PATCH_FIND] Tool error: observation: TimeoutError('Operation timed out after 1200 seconds') Traceback (most recent call last):
+  File "/root/swe_bench_submission/agent.py", line 6241, in execute_test_patch_find_workflow_v0
+    next_observation = tool_manager.get_tool(next_tool_name)(**next_tool_args) if next_tool_args else tool_manager.get_tool(next_tool_name)()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/root/swe_bench_submission/agent.py", line 2662, in wrapper
+    return fn(self, *args, **kwargs)
+  File "/root/swe_bench_submission/agent.py", line 4017, in find_relevant_tests_in_file
+    relevant_nodeids = self.find_relevant_tests(updated_nodeids, problem_statement)
+  File "/root/swe_bench_submission/agent.py", line 4073, in find_relevant_tests
+    relevant_tests = asyncio.run(process_all_test_cases())
+  File "/root/.pyenv/versions/3.13.6/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/root/.pyenv/versions/3.13.6/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/root/.pyenv/versions/3.13.6/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/root/swe_bench_submission/agent.py", line 4069, in process_all_test_cases
+    results = await asyncio.gather(*tasks)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/swe_bench_submission/agent.py", line 4065, in process_with_semaphore
+    return await process_test_case(test_case)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/swe_bench_submission/agent.py", line 4054, in process_test_case
+    print(f"Is {func_name} relevant with problem statement?: {result1}\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/swe_bench_submission/main.py", line 131, in timeout_handler
+    raise TimeoutError(f"Operation timed out after {seconds} seconds")
+TimeoutError: Operation timed out after 1200 seconds
+
+2025-09-25 02:52:46,598 - INFO - [TEST_PATCH_FIND] Execution step 6/50
+2025-09-25 02:52:46,598 - INFO - [TEST_PATCH_FIND] [CRITICAL] Workflow completed after reaching MAX_STEPS (50) without finding relevant tests
+2025-09-25 02:52:46,601 - INFO - Tool list: validate_solution
+compare_solutions
+get_file_content
+analyze_test_coverage
+propose_solutions
+detect_code_smells
+execute_self_consistency_analysis
+analyze_dependencies
+analyze_git_history
+get_code_quality_metrics
+execute_intelligent_search
+enhanced_problem_analysis
+get_temperature_stats
+search_in_all_files_content_v2
+search_in_specified_file_v2
+force_temperature
+get_approval_for_solution
+search_recurive_in_all_files_in_directory
+start_over
+get_git_status
+get_git_log
+get_git_branches
+get_git_diff
+search_in_all_files_content
+test_patch_find_finish
+test_patch_find_finish_v0
+create_new_file
+run_code
+save_relevant_test
+find_relevant_tests_in_file
+apply_code_edit
+filter_test_func_names
+sort_test_func_names
+run_repo_tests
+compile_repo
+grep_replace_once
+list_python_files
+finish
+finish_v0
+parallel_codebase_analysis
+parallel_test_discovery
+parallel_file_operations
+validate_changes_with_manual
+2025-09-25 02:52:46,601 - INFO - test_func_names: set()
+2025-09-25 02:52:46,601 - INFO - test_func_code: []
+2025-09-25 02:52:46,601 - INFO - Tool list: get_file_content
+search_in_specified_file_v2
+get_approval_for_solution
+search_recurive_in_all_files_in_directory
+start_over
+apply_code_edit
+finish_v0
+validate_changes_with_manual
+2025-09-25 02:52:46,602 - INFO - Startingmain agent execution...
+2025-09-25 02:52:46,602 - INFO - system_prompt: 
+# 🛠️ Code Fixing Expert
+You are a senior Python developer tasked with resolving the issue described in the problem statement while ensuring all provided test functions pass. Follow this structured workflow:
+You will receive:
+1. A **problem statement**.
+2. The **specific test functions code** your fix must pass.
+Your task: Make the necessary and meaningful code changes to resolve the issue and ensure all provided tests pass
+---
+## 🔹 Key Rules
+- Only check **test files mentioned in the provided test functions** — ignore all other test files.
+- Always reference both the **problem statement** and the provided tests when deciding what to modify.
+- Never edit or create test files, new files, or directories.
+- Code must remain **backward compatible** unless the problem statement says otherwise.
+- Propose **at least two** comprehensive meaningfully different solutions to approve before implementing.
+  Each proposal should be distinct in tone, style, or structure.
+- Handle **edge cases** and ensure the fix does not break other functionality.
+- If tests fail, analyze the failure and propose fixes carefully
+- Prefer adding, instead of updating or deleting the existing code.
+- Never guess a function's behavior with name — always read its body and verify the actual implementation.
+---
+## 🔹 Workflow
+1. Identify relevant files based on the given test functions and problem statement.
+2. Locate the code responsible for the issue.
+3. Modify the source code to fix the problem.
+4. Ensure edge cases are handled.
+5. Validate changes across the codebase for completeness and safety.
+6. Confirm no unrelated changes were made.
+7. Get approval from the user before applying your chosen solution.
+8. After finding the key issue, call `get_approval_for_solution` for that fix.
+**🔧 Implementation** 
+1. Use `apply_code_edit` for precise changes
+2. After fully understanding the problem and required changes, prepare a complete solution with all necessary edits and call `get_approval_for_solution` before implementation.
+3. Use `start_over` if current approach is invalid
+**✅ Validation** 
+1. Identify all relevant code files, and even if validation passes, fix every potential issue in the codebase.
+2. Always review the current changes and `start_over` if current approach is not ideal.
+3. Never assume dependencies are installed; always include required imports and installation steps.
+---
+**Important** - Don't modify any test files. The existing test files are no needed to be modified.
+You have access to the following tools:
+{"name": "get_file_content", "description": "Retrieves file contents with optional filtering based on search term and line numbers\nIf the target file contains syntax errors or cannot be parsed, return the full raw content of the file instead of raising an exception.", "input_schema": {"type": "object", "properties": {"file_path": {"type": "string", "description": " filesystem path to target file. This file must be python file."}, "search_start_line": {"type": "integer", "description": " optional start line number to begin extraction (1-indexed)"}, "search_end_line": {"type": "integer", "description": " optional end line number to end extraction (1-indexed)"}, "search_term": {"type": "string", "description": " optional text pattern to filter matching lines"}}, "required": ["file_path"]}}
+
+{"name": "search_in_specified_file_v2", "description": "Locates text patterns within a specific file\n\n\nOutput: matching locations with line numbers, or error description", "input_schema": {"type": "object", "properties": {"file_path": {"type": "string", "description": " target file for pattern matching. This file must be python file."}, "search_term": {"type": "string", "description": " text pattern to find (e.g., \"def test_function\", \"*SomeClass*\")"}}, "required": ["file_path", "search_term"]}}
+
+{"name": "get_approval_for_solution", "description": "This tool is used to get approval for your proposed solution. You need to propose at least 2 meaningfully different and elegant solutions to the problem.\nWhile all the solutions proposed need to be accurate, the following are guidelines for selecting the best solution:\n1. Expected output should be closest to the most relevant test case.\n\n\nOutput: approval: approved/not approved. If approved, you can go ahead and implement the solution.", "input_schema": {"type": "object", "properties": {"solutions": {"type": "array", "items": {"type": "string"}, "description": " list of solutions proposed by you. Each solution should be very detailed and explain why it is better than the other solutions."}, "selected_solution": {"type": "integer", "description": " Index of the solution you think is the best."}, "reason_for_selection": {"type": "string", "description": " Reason for selecting the solution over other solutions."}}, "required": ["solutions", "selected_solution", "reason_for_selection"]}}
+
+{"name": "search_recurive_in_all_files_in_directory", "description": "Locates text patterns recursively within all files in a specific directory\n\n\nOutput: matching locations with line numbers, or error description", "input_schema": {"type": "object", "properties": {"directory_path": {"type": "string", "description": " target directory for pattern matching"}, "search_term": {"type": "string", "description": " text pattern to find (e.g., \"def test_function\", \"*SomeClass*\")"}}, "required": ["directory_path", "search_term"]}}
+
+{"name": "start_over", "description": "This will revert any changes made to the codebase and let's you start over. Only use this tool when you have concluded that current changes you made to the codebase are not relevant and you want to start again with new approach.\n\n\nOutput: Confirmation that the codebase has been reverted", "input_schema": {"type": "object", "properties": {"problem_with_old_approach": {"type": "string", "description": " What you tried and what was the key issues you faced with this approach."}, "new_apprach_to_try": {"type": "string", "description": " What is the new approach you want to try and how it will fix the issues you faced earlier."}}, "required": ["problem_with_old_approach", "new_apprach_to_try"]}}
+
+{"name": "apply_code_edit", "description": "Performs targeted text replacement within source files. If there are any syntax errors in the code, it rejects the edit with an error message. Please note use you can only use this tool after you have approval from user on your proposed solution.\n\n\nOutput: operation status - success confirmation or detailed error with guidance", "input_schema": {"type": "object", "properties": {"file_path": {"type": "string", "description": " target file for modification"}, "search": {"type": "string", "description": " exact text pattern to locate and replace"}, "replace": {"type": "string", "description": " new text content to substitute"}}, "required": ["file_path", "search", "replace"]}}
+
+{"name": "finish_v0", "description": "Signals completion of the current workflow execution", "input_schema": {"type": "object", "properties": {}, "required": []}}
+
+{"name": "validate_changes_with_manual", "description": "Validate your code changes using AI-powered analysis of test expectations.\nThis tool performs intelligent validation by analyzing your code changes against test function\nlogic to determine if your implementation would satisfy the test requirements.\nWHEN TO USE:\n- After making code changes to verify they address the test requirements\n- To understand which files need changes based on test expectations\n- To get detailed feedback on why changes may be insufficient\nHOW IT WORKS:\n1. Retrieves current git diff of all your changes\n2. For each test function, analyzes if changes are:\n   - NOT_RELATED: Test function is not related to the current changes\n   - RELATED_PASS: Changes directly address what test is checking and would pass\n   - RELATED_FAIL: Changes are related but insufficient to make test pass\n3. Provides detailed analysis for each test with specific explanations\n4. Categorizes failures to guide next actions", "input_schema": {"type": "object", "properties": {"last_validation_analysis": {"type": "string", "description": " Detailed analysis carried over from the most recent validation, used to assess the current edits and test functions. No explaination why you edited like current changes, but detailed explanation about code files related to current changes."}}, "required": ["last_validation_analysis"]}}
+
+**📝 Response Format Requirements**
+1. **Strict Triplet Format**:
+   - `next_thought`: Detailed reasoning (include:
+     - Problem understanding
+     - Code analysis
+     - Solution justification
+     - Validation plan)
+   - `next_tool_name`: Must be an exact tool name from the tool list
+   - `next_tool_args`: Valid JSON with:
+     - Proper escaping
+     - No trailing commas
+     - Tool-specific parameters
+2. **Error Handling Format**:
+   - For errors: 
+     next_thought: "Error: [detailed explanation]"
+     next_tool_name: ""
+     next_tool_args: {}
+3. **Example Valid Format**:
+   next_thought: "I'll fix the JSON parsing issue by adding proper error handling and validation"
+   next_tool_name: "apply_code_edit"
+   next_tool_args: {
+     "file_path": "network.py",
+     "search": "return json.loads(response)",
+     "replace": "try:
+    return json.loads(response)
+except JSONDecodeError:
+    logger.error(f'Invalid JSON: {{response}}')
+    raise"
+   }
+4. **Invalid Format Examples** (Avoid These):
+   - Incorrect next_tool_name such as "search_in_all_files_content" instead correct tool name - "search_in_all_files_content_v2"
+   - Missing any of the three required fields
+   - JSON syntax errors in next_tool_args
+   - Extra text outside the triplet format
+   - Using incorrect tool names
+   - Not quoting special characters properly
+
+
+2025-09-25 02:52:46,602 - INFO - instance_prompt: 
+# Now let's start. Here are the relevant test functions code you only must pass:
+No test functions provided
+# Here is the problem statement:
+Please support header rows in RestructuredText output
+### Description
+
+It would be great if the following would work:
+
+```Python
+>>> from astropy.table import QTable
+>>> import astropy.units as u
+>>> import sys
+>>> tbl = QTable({'wave': [350,950]*u.nm, 'response': [0.7, 1.2]*u.count})
+>>> tbl.write(sys.stdout,  format="ascii.rst")
+===== ========
+ wave response
+===== ========
+350.0      0.7
+950.0      1.2
+===== ========
+>>> tbl.write(sys.stdout,  format="ascii.fixed_width", header_rows=["name", "unit"])
+|  wave | response |
+|    nm |       ct |
+| 350.0 |      0.7 |
+| 950.0 |      1.2 |
+>>> tbl.write(sys.stdout,  format="ascii.rst", header_rows=["name", "unit"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3/dist-packages/astropy/table/connect.py", line 129, in __call__
+    self.registry.write(instance, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/astropy/io/registry/core.py", line 369, in write
+    return writer(data, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/astropy/io/ascii/connect.py", line 26, in io_write
+    return write(table, filename, **kwargs)
+  File "/usr/lib/python3/dist-packages/astropy/io/ascii/ui.py", line 856, in write
+    writer = get_writer(Writer=Writer, fast_writer=fast_writer, **kwargs)
+  File "/usr/lib/python3/dist-packages/astropy/io/ascii/ui.py", line 800, in get_writer
+    writer = core._get_writer(Writer, fast_writer, **kwargs)
+  File "/usr/lib/python3/dist-packages/astropy/io/ascii/core.py", line 1719, in _get_writer
+    writer = Writer(**writer_kwargs)
+TypeError: RST.__init__() got an unexpected keyword argument 'header_rows'
+```
+
+
+### Additional context
+
+RestructuredText output is a great way to fill autogenerated documentation with content, so having this flexible makes the life easier `:-)`
+
+
+
+
+2025-09-25 02:52:46,602 - INFO - Starting workflow execution with 200 max steps: timeout: -62155.09793663025 seconds : run_id: 
+2025-09-25 02:52:46,602 - INFO - Execution step 1/200
+2025-09-25 02:52:46,602 - INFO - [CRITICAL] Workflow execution completed after 1 steps
+2025-09-25 02:52:46,602 - INFO - [CRITICAL] About to generate final patch...
+2025-09-25 02:52:46,716 - INFO - Final Patch Generated..: Length: 0
+2025-09-25 02:52:46,716 - INFO - Final Patch: 
+2025-09-25 02:52:46,716 - INFO - workflow execution completed, patch length: 0
+2025-09-25 02:52:46,945 - INFO - ⏱️ agent_execution took 64307.30s (FAILURE)
+2025-09-25 02:52:46,945 - ERROR - ❌ Failed to process astropy__astropy-14182: [Errno 5] Input/output error
+2025-09-25 02:52:46,947 - ERROR - Traceback (most recent call last):
+  File "/root/swe_bench_submission/agent.py", line 6165, in agent_main
+    result = process_task(input_dict, repo_dir)
+  File "/root/swe_bench_submission/agent.py", line 6036, in process_task
+    return has_dependency_error_task_process(input_dict, repod_dir)
+  File "/root/swe_bench_submission/agent.py", line 6148, in has_dependency_error_task_process
+    print(f"[CRITICAL] task processor returning patch length: {len(patch_text)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/swe_bench_submission/main.py", line 620, in run
+    patch_output = agent_main(input_dict, repo_path, True)
+  File "/root/swe_bench_submission/agent.py", line 6173, in agent_main
+    print(f"❌ Error in agent execution: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/swe_bench_submission/evaluate_swe_bench.py", line 196, in process_instance
+    patch = run(**input_params)
+  File "/root/swe_bench_submission/main.py", line 648, in run
+    print(f"❌ {error_msg}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 5] Input/output error
+

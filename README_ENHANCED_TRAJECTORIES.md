@@ -215,3 +215,4 @@ This project follows the same license as the original SWE-bench submission frame
 ---
 
 **Note**: This enhanced submission addresses the specific requirement that "Trajectories must include all model I/O and filtering decisions. We should be able to walk every LLM decision." The framework is ready - implementation requires integrating the enhanced logging into the agent execution flow.
+

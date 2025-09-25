@@ -13,6 +13,7 @@ class TrajectoryLogger:
         self.log_lock = threading.Lock()
         self.step_counts = defaultdict(int)
         self.performance_metrics = defaultdict(list)
+        self.session_id = f"session_{int(time.time())}_{id(self)}"
     
     def log_step(self, instance_id: str, step_number: int, action: str, details: Dict[str, Any]):
         """
@@ -402,6 +403,10 @@ class TrajectoryLogger:
             if message.get('role') == 'user':
                 user_prompts.append(message.get('content', ''))
         return '\n'.join(user_prompts)
+    
+    def _get_session_id(self) -> str:
+        """Get the unique session ID for this logger instance."""
+        return self.session_id
     
     def log_comprehensive_interaction(self, instance_id: str, step_number: int,
                                    interaction_data: Dict[str, Any]):

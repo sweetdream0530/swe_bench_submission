@@ -5,6 +5,24 @@ ENV: Literal["prod", "staging", "dev"] = os.getenv("ENV", "prod")
 
 # Chutes API configuration
 CHUTES_API_KEY = os.getenv("CHUTES_API_KEY", "")
+CHUTES_API_KEY_1 = os.getenv("CHUTES_API_KEY_1", "")
+CHUTES_API_KEY_2 = os.getenv("CHUTES_API_KEY_2", "")
+CHUTES_API_KEY_3 = os.getenv("CHUTES_API_KEY_3", "")
+CHUTES_API_KEY_4 = os.getenv("CHUTES_API_KEY_4", "")
+CHUTES_API_KEY_5 = os.getenv("CHUTES_API_KEY_5", "")
+
+# Collect all available API keys
+CHUTES_API_KEYS = [
+    key for key in [
+        CHUTES_API_KEY,
+        CHUTES_API_KEY_1,
+        CHUTES_API_KEY_2,
+        CHUTES_API_KEY_3,
+        CHUTES_API_KEY_4,
+        CHUTES_API_KEY_5,
+    ] if key and key.strip()
+]
+
 CHUTES_EMBEDDING_URL = "https://chutes-baai-bge-large-en-v1-5.chutes.ai/embed"
 CHUTES_INFERENCE_URL = "https://llm.chutes.ai/v1/chat/completions"
 # Targon API configuration (for fallback)
